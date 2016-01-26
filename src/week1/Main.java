@@ -10,8 +10,8 @@ public class Main {
 	    int N = StdIn.readInt();
 //        QuickFindUF uf = new QuickFindUF(N);
 //        QuickUnionUF uf = new QuickUnionUF(N);
-        WeightQUUF uf = new WeightQUUF(N);
-//        WQUPCUF uf = new WQUPCUF(N);
+//        WeightQUUF uf = new WeightQUUF(N);
+        WQUPCUF uf = new WQUPCUF(N);
         while (!StdIn.isEmpty()){
             int p = StdIn.readInt();
             int q = StdIn.readInt();
