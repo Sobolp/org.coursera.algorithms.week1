@@ -1,14 +1,14 @@
-package week1;
+//package week1;
+//
+//import edu.princeton.cs.introcs.StdIn;
+//import edu.princeton.cs.introcs.StdOut;
+//import edu.princeton.cs.introcs.StdRandom;
+//import edu.princeton.cs.introcs.StdStats;
 
-import edu.princeton.cs.introcs.StdIn;
-import edu.princeton.cs.introcs.StdOut;
-import edu.princeton.cs.introcs.StdRandom;
-import edu.princeton.cs.introcs.StdStats;
-
-//import edu.princeton.cs.algs4.StdIn;
-//import edu.princeton.cs.algs4.StdOut;
-//import edu.princeton.cs.algs4.StdRandom;
-//import edu.princeton.cs.algs4.StdStats;
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.StdRandom;
+import edu.princeton.cs.algs4.StdStats;
 
 /**
  * Created by SoBoLp on 1/28/16.
@@ -19,6 +19,9 @@ public class PercolationStats {
 
     // perform T independent experiments on an N-by-N grid
     public PercolationStats(int N, int T) {
+//        The constructor should throw a java.lang.IllegalArgumentException if either N ≤ 0 or T ≤ 0
+        if (N <= 0 || T <= 0)
+            throw new IllegalArgumentException("N ≤ 0 or T ≤ 0");
         this.T = T;
         fraction = new double[T];
         for (int i = 0; i < T; i++) {
