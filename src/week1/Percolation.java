@@ -1,7 +1,8 @@
 //package week1;
-
-
+//
+//
 //import edu.princeton.cs.algorithms.WeightedQuickUnionUF;
+//
 
 import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
@@ -67,8 +68,16 @@ public class Percolation {
     }
 
     // is site (row i, column j) full?
-
     public boolean isFull(int i, int j) {
+        if (isOpen(i, j)) {
+            for (int x = 0; x < pN - 2; x++) {
+                if (unions.connected(x, Math.abs(grid[i][j]) - 1))
+                    return true;
+            }
+        }
+        return false;
+    }
+/*    public boolean isFull(int i, int j) {
         for (int x = 0; x < pN - 2; x++)
             for (int y = (pN - 2) * (pN - 2) - (pN - 2); y < (pN - 2) * (pN - 2); y++) {
                 if (unions.connected(x, Math.abs(grid[i][j]) - 1) &&
@@ -76,12 +85,12 @@ public class Percolation {
                     return true;
             }
         return false;
-    }
+    }*/
 
     // does the system percolate?
     public boolean percolates() {
         for (int i = 1; i < pN - 1; i++)
-            if (isFull(1, i))
+            if (isFull(pN - 2, i))
                 return true;
         return false;
     }
@@ -102,29 +111,18 @@ public class Percolation {
 
     // test client (optional)
     public static void main(String[] args) {
-        Percolation a = new Percolation(2);
+        Percolation a = new Percolation(5);
 
 
         a.open(1, 2);
         a.open(2, 2);
-//        a.open(3,3);
-//        a.open(3,4);
-//        a.open(4,4);
-//        a.open(5,4);
-
-/*
-        a.open(3,2);
-        a.open(2,3);
-        a.open(3,3);
-//        a.open(2,2);
-        a.open(2,1);
-        a.open(2,2);
-        a.open(4,4);
-        a.open(4,3);
-        a.open(5,4);
-*/
+        a.open(3, 3);
+        a.open(3, 4);
+        a.open(4, 4);
+        a.open(5, 4);
+        a.open(3, 2);
         System.out.println(a);
-        //       System.out.println(a.isFull(5,5));
+        System.out.println(a.isFull(4, 4));
         System.out.println(a.percolates());
 
     }
