@@ -7,10 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b26af222-c2d0-446a-bda7-98ddd8a80f1f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/week1/percolation/InteractivePercolationVisualizer.java" afterPath="$PROJECT_DIR$/src/week1/percolation/InteractivePercolationVisualizer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Percolation/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/Percolation/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/week1/Percolation.java" afterPath="$PROJECT_DIR$/src/week1/Percolation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/week1/PercolationStats.java" afterPath="$PROJECT_DIR$/src/week1/PercolationStats.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="org.coursera.algorithms.week1.iws" />
@@ -733,7 +730,7 @@
       <option name="number" value="Default" />
       <updated>1453813028904</updated>
       <workItem from="1453813030207" duration="14340000" />
-      <workItem from="1453844810888" duration="70958000" />
+      <workItem from="1453844810888" duration="71102000" />
     </task>
     <task id="LOCAL-00001" summary="week1_1">
       <created>1453845061157</created>
@@ -777,11 +774,17 @@
       <option name="project" value="LOCAL" />
       <updated>1454018671907</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="v 0.6 (Ok but still problem with memory test )">
+      <created>1454023767461</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1454023767461</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85298000" />
+    <option name="totallyTimeSpent" value="85442000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -843,7 +846,8 @@
     <MESSAGE value="v 0.3 (fix isFull  wrong logic)" />
     <MESSAGE value="v 0.4 (work but  backwash)" />
     <MESSAGE value="v 0.5 (fix  backwash)" />
-    <option name="LAST_COMMIT_MESSAGE" value="v 0.5 (fix  backwash)" />
+    <MESSAGE value="v 0.6 (Ok but still problem with memory test )" />
+    <option name="LAST_COMMIT_MESSAGE" value="v 0.6 (Ok but still problem with memory test )" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
