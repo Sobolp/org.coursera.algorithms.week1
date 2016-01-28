@@ -1,10 +1,10 @@
-//package week1;
-//
-//
-//import edu.princeton.cs.algorithms.WeightedQuickUnionUF;
-//
+package week1;
 
-import edu.princeton.cs.algs4.WeightedQuickUnionUF;
+
+import edu.princeton.cs.algorithms.WeightedQuickUnionUF;
+
+
+//import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
 /**
  * Created by SoBoLp on 1/27/16.
@@ -18,7 +18,7 @@ public class Percolation {
     // create N-by-N grid, with all sites blocked
     public Percolation(int N) {
         this.pN = N + 2;
-        this.unions = new WeightedQuickUnionUF(N * N);
+        this.unions = new WeightedQuickUnionUF(N * N + 2);
         if (N <= 0) throw new IllegalArgumentException("N ≤ 0");
         grid = new int[pN][pN];
         int count = 1;
@@ -32,15 +32,19 @@ public class Percolation {
                 }
             }
         }
+        for (int i = 1; i <= N; i++) {
+            unions.union(0, i);
+            unions.union(N * N + 1, N * N + 1 - i);
+        }
     }
 
     // open site (row i, column j) if it is not open already
     public void open(int i, int j) {
         if (!this.isOpen(i, j)) {
-            int point = grid[i][j] - 1;
+            int point = grid[i][j];
             grid[i][j] *= -1;
 
-            if (i > 1)
+            if (i > 0)
                 if (this.isOpen(i - 1, j)) {
                     unions.union(point, point - pN + 2);
                 }
@@ -48,7 +52,7 @@ public class Percolation {
                 if (this.isOpen(i + 1, j)) {
                     unions.union(point, point + pN - 2);
                 }
-            if (j > 1)
+            if (j > 0)
                 if (this.isOpen(i, j - 1)) {
                     unions.union(point, point - 1);
                 }
@@ -69,30 +73,15 @@ public class Percolation {
 
     // is site (row i, column j) full?
     public boolean isFull(int i, int j) {
-        if (isOpen(i, j)) {
-            for (int x = 0; x < pN - 2; x++) {
-                if (unions.connected(x, Math.abs(grid[i][j]) - 1))
-                    return true;
-            }
-        }
+        if (isOpen(i, j))
+            return (unions.connected(0, Math.abs(grid[i][j])));
         return false;
     }
-/*    public boolean isFull(int i, int j) {
-        for (int x = 0; x < pN - 2; x++)
-            for (int y = (pN - 2) * (pN - 2) - (pN - 2); y < (pN - 2) * (pN - 2); y++) {
-                if (unions.connected(x, Math.abs(grid[i][j]) - 1) &&
-                        unions.connected(y, Math.abs(grid[i][j]) - 1))
-                    return true;
-            }
-        return false;
-    }*/
+
 
     // does the system percolate?
     public boolean percolates() {
-        for (int i = 1; i < pN - 1; i++)
-            if (isFull(pN - 2, i))
-                return true;
-        return false;
+        return (unions.connected(0, ((pN - 2) * (pN - 2) + 1)));
     }
 
 /*

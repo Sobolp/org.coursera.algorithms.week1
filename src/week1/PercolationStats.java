@@ -1,14 +1,14 @@
-//package week1;
-//
-//import edu.princeton.cs.introcs.StdIn;
-//import edu.princeton.cs.introcs.StdOut;
-//import edu.princeton.cs.introcs.StdRandom;
-//import edu.princeton.cs.introcs.StdStats;
+package week1;
 
-import edu.princeton.cs.algs4.StdIn;
-import edu.princeton.cs.algs4.StdOut;
-import edu.princeton.cs.algs4.StdRandom;
-import edu.princeton.cs.algs4.StdStats;
+import edu.princeton.cs.introcs.StdIn;
+import edu.princeton.cs.introcs.StdOut;
+import edu.princeton.cs.introcs.StdRandom;
+import edu.princeton.cs.introcs.StdStats;
+
+//import edu.princeton.cs.algs4.StdIn;
+//import edu.princeton.cs.algs4.StdOut;
+//import edu.princeton.cs.algs4.StdRandom;
+//import edu.princeton.cs.algs4.StdStats;
 
 /**
  * Created by SoBoLp on 1/28/16.
