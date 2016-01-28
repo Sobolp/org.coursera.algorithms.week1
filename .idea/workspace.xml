@@ -9,7 +9,6 @@
     <list default="true" id="b26af222-c2d0-446a-bda7-98ddd8a80f1f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Percolation/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/Percolation/META-INF/MANIFEST.MF" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/week1/Percolation.java" afterPath="$PROJECT_DIR$/src/week1/Percolation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/week1/PercolationStats.java" afterPath="$PROJECT_DIR$/src/week1/PercolationStats.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="org.coursera.algorithms.week1.iws" />
@@ -33,36 +32,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Percolation.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Percolation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/week1/Percolation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43945312">
-              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-              <folding>
-                <element signature="e#2283#2284#0" expanded="true" />
-                <element signature="e#2354#2355#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WQUPCUF.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/week1/WQUPCUF.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2792#2793#0" expanded="true" />
+                <element signature="e#2863#2864#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PercolationStats.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PercolationStats.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/week1/PercolationStats.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="41" />
+            <state vertical-scroll-proportion="-0.087890625">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1270#1271#0" expanded="true" />
@@ -117,8 +104,8 @@
         <option value="$PROJECT_DIR$/src/week1/Main.java" />
         <option value="$PROJECT_DIR$/src/week1/percolation/PercolationVisualizer.java" />
         <option value="$PROJECT_DIR$/src/week1/percolation/InteractivePercolationVisualizer.java" />
-        <option value="$PROJECT_DIR$/src/week1/Percolation.java" />
         <option value="$PROJECT_DIR$/src/week1/PercolationStats.java" />
+        <option value="$PROJECT_DIR$/src/week1/Percolation.java" />
       </list>
     </option>
   </component>
@@ -341,7 +328,7 @@
       <recent name="week1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PercolationStats">
+  <component name="RunManager" selected="Application.InteractivePercolationVisualizer">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="week1.Main" />
@@ -690,9 +677,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.PercolationStats" />
-        <item index="1" class="java.lang.String" itemvalue="Application.InteractivePercolationVisualizer" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Percolation" />
+        <item index="0" class="java.lang.String" itemvalue="Application.InteractivePercolationVisualizer" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Percolation" />
+        <item index="2" class="java.lang.String" itemvalue="Application.PercolationStats" />
         <item index="3" class="java.lang.String" itemvalue="Application.PercolationVisualizer" />
         <item index="4" class="java.lang.String" itemvalue="Application.Main" />
       </list>
@@ -710,7 +697,7 @@
       <option name="number" value="Default" />
       <updated>1453813028904</updated>
       <workItem from="1453813030207" duration="14340000" />
-      <workItem from="1453844810888" duration="62981000" />
+      <workItem from="1453844810888" duration="65910000" />
     </task>
     <task id="LOCAL-00001" summary="week1_1">
       <created>1453845061157</created>
@@ -742,11 +729,17 @@
       <option name="project" value="LOCAL" />
       <updated>1454011497958</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="v 0.4 (work but  backwash)">
+      <created>1454015635631</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1454015635631</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77321000" />
+    <option name="totallyTimeSpent" value="80250000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -806,7 +799,8 @@
     <MESSAGE value="v 0.1 (work but units from first line and last line show as connected)" />
     <MESSAGE value="v 0.2 (works but isFull is wrong logic)" />
     <MESSAGE value="v 0.3 (fix isFull  wrong logic)" />
-    <option name="LAST_COMMIT_MESSAGE" value="v 0.3 (fix isFull  wrong logic)" />
+    <MESSAGE value="v 0.4 (work but  backwash)" />
+    <option name="LAST_COMMIT_MESSAGE" value="v 0.4 (work but  backwash)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -837,27 +831,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/week1/Percolation.java</url>
-          <line>114</line>
+          <line>122</line>
           <properties />
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/week1/Percolation.java</url>
-          <line>113</line>
+          <line>121</line>
           <properties />
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/week1/Percolation.java</url>
-          <line>106</line>
+          <line>118</line>
           <properties />
-          <option name="timeStamp" value="39" />
+          <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="41" />
+      <option name="time" value="42" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1086,7 +1080,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/week1/WQUPCUF.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.6152344">
           <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1094,10 +1088,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/PercolationStats.java">
+    <entry file="file://$PROJECT_DIR$/src/week1/Percolation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="41" />
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding>
+            <element signature="e#2792#2793#0" expanded="true" />
+            <element signature="e#2863#2864#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week1/PercolationStats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.087890625">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1270#1271#0" expanded="true" />
@@ -1108,17 +1113,6 @@
             <element signature="e#1600#1601#0" expanded="true" />
             <element signature="e#1684#1685#0" expanded="true" />
             <element signature="e#1748#1749#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/Percolation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43945312">
-          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding>
-            <element signature="e#2283#2284#0" expanded="true" />
-            <element signature="e#2354#2355#0" expanded="true" />
           </folding>
         </state>
       </provider>
