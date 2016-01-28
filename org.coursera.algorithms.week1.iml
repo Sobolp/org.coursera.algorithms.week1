@@ -8,5 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="com.github.fracpete:princeton-java-stdlib:1.0.2" level="application" />
+    <orderEntry type="library" name="com.googlecode.princeton-java-algorithms:algorithms:4.0.1" level="application" />
   </component>
 </module>

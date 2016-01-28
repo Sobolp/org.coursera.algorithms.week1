@@ -16,7 +16,7 @@ public class WeightQUUF {
         sz = new int[N];
         for (int i = 0; i < N; i++){
             id[i] = i;
-            sz[i] = 0;
+            sz[i] = 1;
         }
     }
     private int root (int i) {

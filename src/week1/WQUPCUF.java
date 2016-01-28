@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by pavelbolotov on 1/26/16.
+ * Created by SoBoLp on 1/26/16.
  */
 public class WQUPCUF {
     private int[] id;
@@ -17,7 +17,7 @@ public class WQUPCUF {
         sz = new int[N];
         for (int i = 0; i < N; i++){
             id[i] = i;
-            sz[i] = 0;
+            sz[i] = 1;
         }
     }
     private int root (int i) {
