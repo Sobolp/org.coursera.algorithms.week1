@@ -13,13 +13,13 @@ public class Deque<Item> implements Iterable<Item> {
     private int size;
 
     private class Node {
-        Item item;
-        Node next;
-        Node prev;
+        private Item item;
+        private Node next;
+        private Node prev;
 
         public Node(Node prev, Item item, Node next) {
             if (item == null)
-                throw new NullPointerException ();
+                throw new NullPointerException();
             this.item = item;
             this.next = next;
             this.prev = prev;
@@ -169,12 +169,12 @@ public class Deque<Item> implements Iterable<Item> {
         System.out.println(testStr.removeLast());
 //        System.out.println(testStr.removeLast());
         System.out.println("size: " + testStr.size());
-        String list = "{ ";
-        for (String s : testStr) {
-            list += s;
-            list += " ";
-        }
-        list += "}";
-        System.out.println(list);
+//        String list = "{ ";
+//        for (String s : testStr) {
+//            list += s;
+//            list += " ";
+//        }
+//        list += "}";
+//        System.out.println(list);
     }
 }

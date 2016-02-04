@@ -1,6 +1,9 @@
 package week2;
 
 import edu.princeton.cs.introcs.StdRandom;
+//
+//import edu.princeton.cs.algs4.StdRandom;
+
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
@@ -11,80 +14,90 @@ import java.util.NoSuchElementException;
 public class RandomizedQueue<Item> implements Iterable<Item> {
     private Item[] array;
     private int N = 0;
-    /** construct an empty randomized queue
-     *
+
+    /**
+     * construct an empty randomized queue
      */
-    public RandomizedQueue(){
+    public RandomizedQueue() {
         array = (Item[]) new Object[2];
     }
 
-    /** is the queue empty?
+    /**
+     * is the queue empty?
      *
      * @return
      */
-    public boolean isEmpty(){
+    public boolean isEmpty() {
         return size() == 0;
     }
 
-    /** return the number of items on the queue
+    /**
+     * return the number of items on the queue
      *
      * @return
      */
-    public int size(){
+    public int size() {
         return N;
     }
 
-    /** add the item
+    /**
+     * add the item
      *
      * @param item
      */
-    public void enqueue(Item item){
+    public void enqueue(Item item) {
         if (item == null)
-            throw new NullPointerException ();
+            throw new NullPointerException();
         if (N == array.length)
-            resize(2*array.length);
+            resize(2 * array.length);
         array[N++] = item;
     }
 
-    /** remove and return a random item
+    /**
+     * remove and return a random item
      *
      * @return
      */
-    public Item dequeue(){
+    public Item dequeue() {
         if (isEmpty())
             throw new NoSuchElementException();
         int index = StdRandom.uniform(N);
         Item result = array[index];
         array[index] = array[--N];
         array[N] = null;
-        if (N>0 && N==array.length/4)
-            resize(array.length/2);
+        if (N > 0 && N == array.length / 4)
+            resize(array.length / 2);
         return result;
     }
 
-    /** return (but do not remove) a random item
+    /**
+     * return (but do not remove) a random item
      *
      * @return
      */
-    public Item sample(){
+    public Item sample() {
+        if (isEmpty())
+            throw new NoSuchElementException();
         int index = StdRandom.uniform(N);
         return array[index];
     }
 
-     private void resize(int capacity){
-         Item[] copy = (Item[]) new Object[capacity];
-         for (int i = 0;i<N;i++)
-             copy[i] = array[i];
-         array = copy;
-     }
+    private void resize(int capacity) {
+        Item[] copy = (Item[]) new Object[capacity];
+        for (int i = 0; i < N; i++)
+            copy[i] = array[i];
+        array = copy;
+    }
 
-    /** return an independent iterator over items in random order
+    /**
+     * return an independent iterator over items in random order
      *
      * @return
      */
-    public Iterator<Item> iterator(){
+    public Iterator<Item> iterator() {
         return new ReverseArrayIterator();
     }
+
     private class ReverseArrayIterator implements Iterator<Item> {
         private int i = N;
 
@@ -103,35 +116,36 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         }
     }
 
-    /** unit testing
+    /**
+     * unit testing
      *
      * @param args
      */
-    public static void main(String[] args){
+    public static void main(String[] args) {
         RandomizedQueue<String> testArr = new RandomizedQueue<String>();
 
-        testArr.enqueue("1");
-
-        testArr.enqueue("2");
-        testArr.enqueue("3");
-        testArr.enqueue("4");
-        testArr.enqueue("5");
-        System.out.println("sam: "+testArr.sample());
-        System.out.println("sam: "+testArr.sample());
-
-        System.out.println(testArr.dequeue());
-        System.out.println(testArr.dequeue());
-        System.out.println(testArr.dequeue());
-        System.out.println(testArr.dequeue());
+//        testArr.enqueue("1");
+//
+//        testArr.enqueue("2");
+//        testArr.enqueue("3");
+//        testArr.enqueue("4");
+//        testArr.enqueue("5");
+//        System.out.println("sam: " + testArr.sample());
+        System.out.println("sam: " + testArr.sample());
+//
+//        System.out.println(testArr.dequeue());
+//        System.out.println(testArr.dequeue());
+//        System.out.println(testArr.dequeue());
+//        System.out.println(testArr.dequeue());
 //        testArr.enqueue(null);
         System.out.println("size: " + testArr.size());
-        String list = "{ ";
-        for (String s : testArr) {
-            list += s;
-            list += " ";
-        }
-        list += "}";
-        System.out.println(list);
+//        String list = "{ ";
+//        for (String s : testArr) {
+//            list += s;
+//            list += " ";
+//        }
+//        list += "}";
+//        System.out.println(list);
 
 
     }
