@@ -110,6 +110,11 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
     private class ReverseArrayIterator implements Iterator<Item> {
         private int i = N;
 
+        public ReverseArrayIterator() {
+            if (N > 0)
+                StdRandom.shuffle(array, 0, N - 1);
+        }
+
         public boolean hasNext() {
             return i > 0;
         }
@@ -134,29 +139,37 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         RandomizedQueue<String> testArr = new RandomizedQueue<String>();
 
         testArr.enqueue("1");
-
-        testArr.enqueue("2");
-        testArr.enqueue("3");
-        testArr.enqueue("4");
-        testArr.enqueue("5");
-        testArr.enqueue("6");
-        testArr.enqueue("7");
-//        System.out.println("sam: " + testArr.sample());
-        System.out.println("sam: " + testArr.sample());
 //
-        System.out.println(testArr.dequeue());
-        System.out.println(testArr.dequeue());
+        testArr.enqueue("2");
+//        testArr.enqueue("3");
+//        testArr.enqueue("4");
+//        testArr.enqueue("5");
+//        testArr.enqueue("6");
+//        testArr.enqueue("7");
+//        System.out.println("sam: " + testArr.sample());
+//        System.out.println("sam: " + testArr.sample());
+//
+//        System.out.println(testArr.dequeue());
+//        System.out.println(testArr.dequeue());
 //        System.out.println(testArr.dequeue());
 //        System.out.println(testArr.dequeue());
 //        testArr.enqueue(null);
-        System.out.println("size: " + testArr.size());
-        String list = "{ ";
-        for (String s : testArr) {
-            list += s;
-            list += " ";
-        }
-        list += "}";
-        System.out.println(list);
+//        System.out.println("size: " + testArr.size());
+//        String list = "{ ";
+//        for (String s : testArr) {
+//            list += s;
+//            list += " ";
+//        }
+//        list += "}";
+//
+//        System.out.println(list);
+//        String list1 = "{ ";
+//        for (String s : testArr) {
+//            list1 += s;
+//            list1 += " ";
+//        }
+//        list1 += "}";
+//        System.out.println(list1);
 
 
     }

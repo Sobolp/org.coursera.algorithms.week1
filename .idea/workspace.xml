@@ -9,7 +9,6 @@
     <list default="true" id="b26af222-c2d0-446a-bda7-98ddd8a80f1f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Percolation/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/Percolation/META-INF/MANIFEST.MF" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/week2/RandomizedQueue.java" afterPath="$PROJECT_DIR$/src/week2/RandomizedQueue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/week2/Subset.java" afterPath="$PROJECT_DIR$/src/week2/Subset.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="org.coursera.algorithms.week1.iws" />
@@ -54,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RandomizedQueue.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RandomizedQueue.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/week2/RandomizedQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5188679">
+              <caret line="114" column="33" selection-start-line="114" selection-start-column="16" selection-end-line="114" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#417#418#0" expanded="true" />
@@ -71,19 +70,19 @@
                 <element signature="e#2123#2124#0" expanded="true" />
                 <element signature="e#2266#2267#0" expanded="true" />
                 <element signature="e#2315#2316#0" expanded="true" />
-                <element signature="e#2446#2447#0" expanded="true" />
-                <element signature="e#2482#2483#0" expanded="true" />
-                <element signature="e#2972#2980#0" expanded="true" />
+                <element signature="e#2572#2573#0" expanded="true" />
+                <element signature="e#2608#2609#0" expanded="true" />
+                <element signature="e#3098#3106#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Subset.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Subset.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/week2/Subset.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1981132">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#407#415#0" expanded="true" />
@@ -135,8 +134,8 @@
         <option value="$PROJECT_DIR$/src/week1/Percolation.java" />
         <option value="$PROJECT_DIR$/src/week1/HeightQUUF.java" />
         <option value="$PROJECT_DIR$/src/week2/Deque.java" />
-        <option value="$PROJECT_DIR$/src/week2/RandomizedQueue.java" />
         <option value="$PROJECT_DIR$/src/week2/Subset.java" />
+        <option value="$PROJECT_DIR$/src/week2/RandomizedQueue.java" />
       </list>
     </option>
   </component>
@@ -747,7 +746,7 @@
       <workItem from="1453813030207" duration="14340000" />
       <workItem from="1453844810888" duration="106110000" />
       <workItem from="1454499991077" duration="2654000" />
-      <workItem from="1454573291185" duration="27023000" />
+      <workItem from="1454573291185" duration="28871000" />
     </task>
     <task id="LOCAL-00001" summary="week1_1">
       <created>1453845061157</created>
@@ -827,11 +826,17 @@
       <option name="project" value="LOCAL" />
       <updated>1454614297512</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="week2 v 0.2 only Deque + RandomizedQueue + Subset&#10;94.73 / 100.00">
+      <created>1454618945082</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1454618945082</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150127000" />
+    <option name="totallyTimeSpent" value="151975000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -855,7 +860,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33734939" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32771084" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32771084" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31566265" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28397712" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -898,7 +903,8 @@
     <MESSAGE value="week2 v 0.01 only Deque" />
     <MESSAGE value="week2 v 0.01 only Deque + RandomizedQueue" />
     <MESSAGE value="week2 v 0.1 only Deque + RandomizedQueue + Subset&#10;90.84 / 100.00" />
-    <option name="LAST_COMMIT_MESSAGE" value="week2 v 0.1 only Deque + RandomizedQueue + Subset&#10;90.84 / 100.00" />
+    <MESSAGE value="week2 v 0.2 only Deque + RandomizedQueue + Subset&#10;94.73 / 100.00" />
+    <option name="LAST_COMMIT_MESSAGE" value="week2 v 0.2 only Deque + RandomizedQueue + Subset&#10;94.73 / 100.00" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -977,7 +983,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/week2/RandomizedQueue.java</url>
-          <line>153</line>
+          <line>158</line>
           <properties />
           <option name="timeStamp" value="64" />
         </line-breakpoint>
@@ -1316,10 +1322,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/week2/RandomizedQueue.java">
+    <entry file="file://$PROJECT_DIR$/src/week2/Subset.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#407#415#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week2/RandomizedQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5188679">
+          <caret line="114" column="33" selection-start-line="114" selection-start-column="16" selection-end-line="114" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#417#418#0" expanded="true" />
@@ -1332,20 +1349,9 @@
             <element signature="e#2123#2124#0" expanded="true" />
             <element signature="e#2266#2267#0" expanded="true" />
             <element signature="e#2315#2316#0" expanded="true" />
-            <element signature="e#2446#2447#0" expanded="true" />
-            <element signature="e#2482#2483#0" expanded="true" />
-            <element signature="e#2972#2980#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week2/Subset.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1981132">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#407#415#0" expanded="true" />
+            <element signature="e#2572#2573#0" expanded="true" />
+            <element signature="e#2608#2609#0" expanded="true" />
+            <element signature="e#3098#3106#0" expanded="true" />
           </folding>
         </state>
       </provider>
