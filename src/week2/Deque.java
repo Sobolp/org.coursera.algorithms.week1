@@ -167,7 +167,7 @@ public class Deque<Item> implements Iterable<Item> {
         testStr.addLast("3");
         System.out.println(testStr.removeLast());
         System.out.println(testStr.removeLast());
-        System.out.println(testStr.removeLast());
+//        System.out.println(testStr.removeLast());
         System.out.println("size: " + testStr.size());
         String list = "{ ";
         for (String s : testStr) {

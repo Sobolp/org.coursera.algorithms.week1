@@ -1,16 +1,21 @@
 package week2;
 
+import edu.princeton.cs.introcs.StdRandom;
+
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 /**
  * Created by SoBoLp on 2/4/16.
  */
 public class RandomizedQueue<Item> implements Iterable<Item> {
+    private Item[] array;
+    private int N = 0;
     /** construct an empty randomized queue
      *
      */
     public RandomizedQueue(){
-
+        array = (Item[]) new Object[2];
     }
 
     /** is the queue empty?
@@ -18,7 +23,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
      * @return
      */
     public boolean isEmpty(){
-        return false;
+        return size() == 0;
     }
 
     /** return the number of items on the queue
@@ -26,7 +31,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
      * @return
      */
     public int size(){
-        return 0;
+        return N;
     }
 
     /** add the item
@@ -34,7 +39,11 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
      * @param item
      */
     public void enqueue(Item item){
-
+        if (item == null)
+            throw new NullPointerException ();
+        if (N == array.length)
+            resize(2*array.length);
+        array[N++] = item;
     }
 
     /** remove and return a random item
@@ -42,7 +51,15 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
      * @return
      */
     public Item dequeue(){
-        return null;
+        if (isEmpty())
+            throw new NoSuchElementException();
+        int index = StdRandom.uniform(N);
+        Item result = array[index];
+        array[index] = array[--N];
+        array[N] = null;
+        if (N>0 && N==array.length/4)
+            resize(array.length/2);
+        return result;
     }
 
     /** return (but do not remove) a random item
@@ -50,15 +67,40 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
      * @return
      */
     public Item sample(){
-        return null;
+        int index = StdRandom.uniform(N);
+        return array[index];
     }
+
+     private void resize(int capacity){
+         Item[] copy = (Item[]) new Object[capacity];
+         for (int i = 0;i<N;i++)
+             copy[i] = array[i];
+         array = copy;
+     }
 
     /** return an independent iterator over items in random order
      *
      * @return
      */
     public Iterator<Item> iterator(){
-        return null;
+        return new ReverseArrayIterator();
+    }
+    private class ReverseArrayIterator implements Iterator<Item> {
+        private int i = N;
+
+        public boolean hasNext() {
+            return i > 0;
+        }
+
+        public void remove() {
+            /* not supported */
+            throw new UnsupportedOperationException("Unsupported the remove() method in the iterator");
+        }
+
+        public Item next() {
+            if (!hasNext()) throw new NoSuchElementException();
+            return array[--i];
+        }
     }
 
     /** unit testing
@@ -66,6 +108,31 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
      * @param args
      */
     public static void main(String[] args){
+        RandomizedQueue<String> testArr = new RandomizedQueue<String>();
+
+        testArr.enqueue("1");
+
+        testArr.enqueue("2");
+        testArr.enqueue("3");
+        testArr.enqueue("4");
+        testArr.enqueue("5");
+        System.out.println("sam: "+testArr.sample());
+        System.out.println("sam: "+testArr.sample());
+
+        System.out.println(testArr.dequeue());
+        System.out.println(testArr.dequeue());
+        System.out.println(testArr.dequeue());
+        System.out.println(testArr.dequeue());
+//        testArr.enqueue(null);
+        System.out.println("size: " + testArr.size());
+        String list = "{ ";
+        for (String s : testArr) {
+            list += s;
+            list += " ";
+        }
+        list += "}";
+        System.out.println(list);
+
 
     }
 }
