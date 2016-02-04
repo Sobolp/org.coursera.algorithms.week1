@@ -18,20 +18,13 @@ public class Subset {
     public static void main(String[] args) {
 
         int k;
-        int N = 0;
         RandomizedQueue<String> queue = new RandomizedQueue<String>();
-//        if (args.length > 0)
-            k = Integer.parseInt(args[0]);
-//        else
-//            throw new NoSuchElementException();
-//        String str = StdIn.readString();
-        while (!StdIn.isEmpty() || !StdIn.hasNextChar()) {
+        k = Integer.parseInt(args[0]);
+
+        while (!StdIn.isEmpty()) {
             String str = StdIn.readString();
             queue.enqueue(str);
-            N++;
         }
-//        if (N < k || k < 0)
-//            throw new NullPointerException("0 ≤ k ≤ N");
         for (int i = 0; i < k; i++) {
             StdOut.println(queue.dequeue());
         }
