@@ -104,15 +104,22 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
      * @return
      */
     public Iterator<Item> iterator() {
-        return new ReverseArrayIterator();
+        return new RandomArrayIterator(N, array);
     }
 
-    private class ReverseArrayIterator implements Iterator<Item> {
-        private int i = N;
+    private class RandomArrayIterator implements Iterator<Item> {
+        private int i;
+        private Item[] arrI;
 
-        public ReverseArrayIterator() {
-            if (N > 0)
-                StdRandom.shuffle(array, 0, N - 1);
+        public RandomArrayIterator(int inN, Item[] inArr) {
+            i = inN;
+            if (i > 0) {
+                arrI = (Item[]) new Object[i];
+                for (int ii = 0; ii < N; ii++)
+                    arrI[ii] = inArr[ii];
+                StdRandom.shuffle(arrI);
+            }
+
         }
 
         public boolean hasNext() {
@@ -126,7 +133,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 
         public Item next() {
             if (!hasNext()) throw new NoSuchElementException();
-            return array[--i];
+            return arrI[--i];
         }
     }
 
@@ -141,12 +148,19 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         testArr.enqueue("1");
 //
         testArr.enqueue("2");
-//        testArr.enqueue("3");
-//        testArr.enqueue("4");
-//        testArr.enqueue("5");
-//        testArr.enqueue("6");
-//        testArr.enqueue("7");
-//        System.out.println("sam: " + testArr.sample());
+        testArr.enqueue("3");
+        testArr.enqueue("4");
+        testArr.enqueue("5");
+        testArr.enqueue("6");
+        testArr.enqueue("7");
+        testArr.enqueue("8");
+        testArr.enqueue("9");
+        testArr.enqueue("10");
+        Iterator<String> iter1 = testArr.iterator();
+        Iterator<String> iter2 = testArr.iterator();
+        System.out.println(iter1);
+        System.out.println(iter2);
+        System.out.println("sam: " + testArr.sample());
 //        System.out.println("sam: " + testArr.sample());
 //
 //        System.out.println(testArr.dequeue());
