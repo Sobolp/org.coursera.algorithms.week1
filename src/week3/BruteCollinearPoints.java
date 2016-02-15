@@ -7,18 +7,26 @@ import java.util.Comparator;
  * Created by SoBoLp on 2/14/16.
  */
 public class BruteCollinearPoints {
+
+    private Point[][] pointMatrix;
+    private int index = 0;
+
     /**
      * finds all line segments containing 4 points
      *
      * @param points
      */
-
-    private Point[][] pointMatrix;
-    private int index = 0;
-
     public BruteCollinearPoints(Point[] points) {
 
+        if (points.length == 0) throw new NullPointerException("Point[] is null");
         Arrays.sort(points);
+        if (points[0] == null) throw new NullPointerException("Point: " + points[0] + " is null");
+        for (int i = 1; i < points.length; i++) {
+            if (points[i] == null) throw new NullPointerException("Point: " + points[i] + " is null");
+            if (points[i - 1].compareTo(points[i]) == 0)
+                throw new IllegalArgumentException("Point: " + points[i - 1] + " is equal to point: " + points[i]);
+        }
+
         pointMatrix = new Point[points.length][2];
         for (int p1 = 0; p1 < points.length; p1++) {
             for (int p2 = p1 + 1; p2 < points.length; p2++) {
@@ -37,9 +45,6 @@ public class BruteCollinearPoints {
                 }
             }
         }
-//        lineSegments = new LineSegment[index];
-//        for (int i = 0; i < index; i++)
-//            lineSegments[i] = new LineSegment(pointMatrix[i][0], pointMatrix[i][1]);
     }
 
     /**

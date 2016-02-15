@@ -1,15 +1,59 @@
 package week3;
 
+import java.util.Arrays;
+import java.util.Comparator;
+
 /**
  * Created by SoBoLp on 2/14/16.
  */
 public class FastCollinearPoints {
+
+    private Point[][] pointMatrix;
+    private int index = 0;
+
     /**
      * finds all line segments containing 4 or more points
      *
      * @param points
      */
     public FastCollinearPoints(Point[] points) {
+        if (points.length == 0) throw new NullPointerException("Point[] is null");
+        Arrays.sort(points);
+        if (points[0] == null) throw new NullPointerException("Point: " + points[0] + " is null");
+        for (int i = 1; i < points.length; i++) {
+            if (points[i] == null) throw new NullPointerException("Point: " + points[i] + " is null");
+            if (points[i - 1].compareTo(points[i]) == 0)
+                throw new IllegalArgumentException("Point: " + points[i - 1] + " is equal to point: " + points[i]);
+        }
+        pointMatrix = new Point[points.length][2];
+        if (points.length > 3) {
+            for (int p = 0; p < points.length; p++) {
+                Arrays.sort(points, points[p].slopeOrder());
+                // Check if any 3 (or more) adjacent points in the sorted order have equal slopes with respect to p.
+                // If so, these points, together with p, are collinear.
+                int count = 2;
+                for (int idx = 2; idx < points.length; idx++) {
+                    if (points[0].slopeTo(points[idx - 1]) == points[0].slopeTo(points[idx]))
+                        count++;
+                    else count = 2;
+                    //Check if idx-2 > 3 that
+                    // if !isFound add to pointMatrix
+                    if (count > 3) {
+                        Point[] related = new Point[count];
+                        related[0] = points[0];
+                        for (int a = 1; a < count; a++)
+                            related[a] = points[idx - a + 1];
+                        Arrays.sort(related);
+                        if (!isFound((related))) {
+                            pointMatrix[index][0] = points[0];
+                            pointMatrix[index][1] = points[count - 1];
+                            index++;
+                        }
+                    }
+//                        count = 2;
+                }
+            }
+        }
 
     }
 
@@ -19,7 +63,7 @@ public class FastCollinearPoints {
      * @return
      */
     public int numberOfSegments() {
-        return 0;
+        return index;
     }
 
     /**
@@ -28,6 +72,30 @@ public class FastCollinearPoints {
      * @return
      */
     public LineSegment[] segments() {
-        return null;
+        LineSegment[] lineSegments = new LineSegment[index];
+        for (int i = 0; i < index; i++)
+            lineSegments[i] = new LineSegment(pointMatrix[i][0], pointMatrix[i][1]);
+        return lineSegments;
     }
+
+    private boolean isEqual(Comparator<Point> c, Point v, Point w) {
+        return c.compare(v, w) == 0;
+    }
+
+    private boolean isFound(Point[] parr) {
+        if (index <= 0)
+            return false;
+        for (int i = 0; i < index; i++) {
+            int count = 0;
+            for (Point pIn : parr) {
+                for (Point pM : pointMatrix[i]) {
+                    if (pIn.compareTo(pM) == 0) count++;
+                }
+            }
+            if (count > 1)
+                return true;
+        }
+        return false;
+    }
+
 }
