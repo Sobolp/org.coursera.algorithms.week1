@@ -7,11 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b26af222-c2d0-446a-bda7-98ddd8a80f1f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/txt/week3/input11.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/week3/FastCollinearPoints.java" afterPath="$PROJECT_DIR$/src/week3/FastCollinearPoints.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/week3/Point.java" afterPath="$PROJECT_DIR$/src/week3/Point.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/week3/SampleClient.java" afterPath="$PROJECT_DIR$/src/week3/SampleClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/week3/FastCollinearPointsTest.java" afterPath="$PROJECT_DIR$/tests/week3/FastCollinearPointsTest.java" />
     </list>
     <ignored path="org.coursera.algorithms.week1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,11 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Point.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Point.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/week3/Point.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3962264">
-              <caret line="77" column="24" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BruteCollinearPoints.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BruteCollinearPoints.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/week3/BruteCollinearPoints.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.5943396">
+              <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1951#1952#0" expanded="true" />
@@ -66,10 +65,32 @@
         <entry file="file://$PROJECT_DIR$/src/week3/FastCollinearPoints.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+              <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
               <folding>
-                <element signature="e#3094#3095#0" expanded="true" />
-                <element signature="e#3136#3137#0" expanded="true" />
+                <element signature="e#3110#3111#0" expanded="true" />
+                <element signature="e#3152#3153#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="input11.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/txt/week3/input11.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SampleClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/week3/SampleClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -138,10 +159,11 @@
         <option value="$PROJECT_DIR$/txt/week3/input4.txt" />
         <option value="$PROJECT_DIR$/tests/week3/BruteCollinearPointsTest.java" />
         <option value="$PROJECT_DIR$/tests/week3/FastCollinearPointsTest.java" />
-        <option value="$PROJECT_DIR$/src/week3/SampleClient.java" />
+        <option value="$PROJECT_DIR$/txt/week3/input11.txt" />
+        <option value="$PROJECT_DIR$/src/week3/Point.java" />
         <option value="$PROJECT_DIR$/src/week3/BruteCollinearPoints.java" />
         <option value="$PROJECT_DIR$/src/week3/FastCollinearPoints.java" />
-        <option value="$PROJECT_DIR$/src/week3/Point.java" />
+        <option value="$PROJECT_DIR$/src/week3/SampleClient.java" />
       </list>
     </option>
   </component>
@@ -1003,7 +1025,7 @@
       <workItem from="1455279886461" duration="2171000" />
       <workItem from="1455295057368" duration="25000" />
       <workItem from="1455301075333" duration="226000" />
-      <workItem from="1455356396148" duration="88650000" />
+      <workItem from="1455356396148" duration="91442000" />
     </task>
     <task id="LOCAL-00001" summary="week1_1">
       <created>1453845061157</created>
@@ -1155,7 +1177,13 @@
       <option name="project" value="LOCAL" />
       <updated>1455563311855</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="week3&#10;v1.0.0&#10;First trying&#10; Compilation:  PASSED&#10; Style:        FAILED&#10; Findbugs:     No potential bugs found.&#10; API:          PASSED&#10; &#10; Correctness:  35/41 tests passed&#10; Memory:       1/1 tests passed&#10; Timing:       25/41 tests passed&#10; &#10; Aggregate score: 80.73% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]">
+      <created>1455573095335</created>
+      <option name="number" value="00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1455573095335</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1164,9 +1192,6 @@
     </history-entry>
     <history-entry file="BruteCollinearPointsTest - 2016.02.15 at 21h 38m 49s.xml">
       <configuration name="BruteCollinearPointsTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FastCollinearPointsTest - 2016.02.15 at 21h 24m 55s.xml">
-      <configuration name="FastCollinearPointsTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="FastCollinearPointsTest - 2016.02.15 at 21h 30m 38s.xml">
       <configuration name="FastCollinearPointsTest" configurationId="JUnit" />
@@ -1186,12 +1211,15 @@
     <history-entry file="FastCollinearPointsTest - 2016.02.15 at 23h 39m 15s.xml">
       <configuration name="FastCollinearPointsTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FastCollinearPointsTest - 2016.02.15 at 23h 52m 33s.xml">
+      <configuration name="FastCollinearPointsTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="FastCollinearPointsTest_testNumberOfSegments - 2016.02.15 at 21h 37m 21s.xml">
       <configuration name="FastCollinearPointsTest.testNumberOfSegments" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="262400000" />
+    <option name="totallyTimeSpent" value="265192000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1245,7 +1273,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="week1" />
     <MESSAGE value="week1_1" />
     <MESSAGE value="week1_2" />
     <MESSAGE value="v 0.1 (work but units from first line and last line show as connected)" />
@@ -1270,7 +1297,8 @@
     <MESSAGE value="week3&#10;v 0.1&#10;BruteCollinearPoints looks good&#10;started work with FastCollinearPoints" />
     <MESSAGE value="week3&#10;v 0.1.1&#10; FastCollinearPoints still not well" />
     <MESSAGE value="week3&#10;v 0.1.2&#10; FastCollinearPoints still not well" />
-    <option name="LAST_COMMIT_MESSAGE" value="week3&#10;v 0.1.2&#10; FastCollinearPoints still not well" />
+    <MESSAGE value="week3&#10;v1.0.0&#10;First trying&#10; Compilation:  PASSED&#10; Style:        FAILED&#10; Findbugs:     No potential bugs found.&#10; API:          PASSED&#10; &#10; Correctness:  35/41 tests passed&#10; Memory:       1/1 tests passed&#10; Timing:       25/41 tests passed&#10; &#10; Aggregate score: 80.73% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]" />
+    <option name="LAST_COMMIT_MESSAGE" value="week3&#10;v1.0.0&#10;First trying&#10; Compilation:  PASSED&#10; Style:        FAILED&#10; Findbugs:     No potential bugs found.&#10; API:          PASSED&#10; &#10; Correctness:  35/41 tests passed&#10; Memory:       1/1 tests passed&#10; Timing:       25/41 tests passed&#10; &#10; Aggregate score: 80.73% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1436,32 +1464,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/week2/Subset.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week2/Deque.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/QuickFindUF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/week1/UF.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1628,14 +1630,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/txt/week3/input4.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13071896">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.666667">
@@ -1657,29 +1651,6 @@
         <state vertical-scroll-proportion="0.9027778">
           <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/txt/week3/input10.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week3/LineSegment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7568579">
-          <caret line="62" column="40" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
-          <folding>
-            <element signature="e#1154#1155#0" expanded="true" />
-            <element signature="e#1181#1182#0" expanded="true" />
-            <element signature="e#1481#1482#0" expanded="true" />
-            <element signature="e#1518#1519#0" expanded="true" />
-            <element signature="e#1902#1903#0" expanded="true" />
-            <element signature="e#1959#1960#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1752,16 +1723,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/txt/week3/input8.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/txt/week3/input10.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/txt/week3/input400.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1795,16 +1756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/week3/SampleClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9433962">
-          <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/week3/FastCollinearPointsTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.7452831">
@@ -1818,21 +1769,67 @@
         <state vertical-scroll-proportion="0.36792454">
           <caret line="52" column="52" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="77" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/week3/BruteCollinearPoints.java">
+    <entry file="file://$PROJECT_DIR$/txt/week3/mystery10089.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.4716983">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/txt/week3/random23.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/txt/week3/input8.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/txt/week3/input10.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/txt/week3/input10.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/txt/week3/input4.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/txt/week3/input11.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week3/SampleClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1951#1952#0" expanded="true" />
-            <element signature="e#1979#1980#0" expanded="true" />
-            <element signature="e#2372#2373#0" expanded="true" />
-            <element signature="e#2415#2416#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1840,20 +1837,42 @@
     <entry file="file://$PROJECT_DIR$/src/week3/FastCollinearPoints.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
           <folding>
-            <element signature="e#3094#3095#0" expanded="true" />
-            <element signature="e#3136#3137#0" expanded="true" />
+            <element signature="e#3110#3111#0" expanded="true" />
+            <element signature="e#3152#3153#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week3/LineSegment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3584906">
+          <caret line="62" column="40" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/week3/Point.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3962264">
-          <caret line="77" column="24" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week3/BruteCollinearPoints.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5943396">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1951#1952#0" expanded="true" />
+            <element signature="e#1979#1980#0" expanded="true" />
+            <element signature="e#2372#2373#0" expanded="true" />
+            <element signature="e#2415#2416#0" expanded="true" />
           </folding>
         </state>
       </provider>

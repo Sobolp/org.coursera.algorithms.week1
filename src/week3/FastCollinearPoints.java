@@ -27,7 +27,7 @@ public class FastCollinearPoints {
                 throw new IllegalArgumentException("Point: " + points[i - 1] + " is equal to point: " + points[i]);
             tmpPoints[i] = points[i];
         }
-        pointMatrix = new Point[points.length][2];
+        pointMatrix = new Point[points.length * points.length][2];
 
         if (points.length > 3) {
             for (int p = 0; p < points.length; p++) {
