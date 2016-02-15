@@ -20,6 +20,7 @@ public class BruteCollinearPointsTest {
     BruteCollinearPoints BCP8;
     BruteCollinearPoints BCP9;
     BruteCollinearPoints BCP10;
+    BruteCollinearPoints BCP20;
 
     private Point[] loadPoints(String fileName) throws FileNotFoundException {
         Point[] points;
@@ -42,7 +43,8 @@ public class BruteCollinearPointsTest {
 //        BCP6 = new BruteCollinearPoints(loadPoints("./txt/week3/input6.txt"));
 //        BCP8 = new BruteCollinearPoints(loadPoints("./txt/week3/input8.txt"));
 //        BCP9 = new BruteCollinearPoints(loadPoints("./txt/week3/input9.txt"));
-        BCP10 = new BruteCollinearPoints(loadPoints("./txt/week3/input10.txt"));
+//        BCP10 = new BruteCollinearPoints(loadPoints("./txt/week3/input10.txt"));
+        BCP20 = new BruteCollinearPoints(loadPoints("./txt/week3/input20.txt"));
 
     }
 
@@ -53,7 +55,8 @@ public class BruteCollinearPointsTest {
 //        assertEquals("input6.txt",1,BCP6.numberOfSegments());
 //        assertEquals("input8.txt",2,BCP8.numberOfSegments());
 //        assertEquals("input9.txt",1,BCP9.numberOfSegments());
-        assertEquals("input10.txt",2,BCP10.numberOfSegments());
+//        assertEquals("input10.txt",2,BCP10.numberOfSegments());
+        assertEquals("input20.txt",5,BCP20.numberOfSegments());
     }
 
     @Test

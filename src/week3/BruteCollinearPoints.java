@@ -73,8 +73,11 @@ public class BruteCollinearPoints {
         for (int i = 0; i < index; i++) {
             for (Point point : parr) {
                 if (!isEqual(pointMatrix[i][0].slopeOrder(), point, pointMatrix[i][1]))
-                    return false;
+                    if (i == index-1)
+                        return false;
+                    else break;
             }
+
         }
         return true;
     }
