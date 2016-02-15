@@ -44,8 +44,8 @@ public class FastCollinearPointsTest {
     public void setUp() throws Exception {
 //        FCP1 = new FastCollinearPoints(loadPoints("./txt/week3/input1.txt"));
 //        FCP4 = new FastCollinearPoints(loadPoints("./txt/week3/input4.txt"));
-//        FCP6 = new FastCollinearPoints(loadPoints("./txt/week3/input6.txt"));
-        FCP8 = new FastCollinearPoints(loadPoints("./txt/week3/input8.txt"));
+        FCP6 = new FastCollinearPoints(loadPoints("./txt/week3/input6.txt"));
+//        FCP8 = new FastCollinearPoints(loadPoints("./txt/week3/input8.txt"));
 //        FCP9 = new FastCollinearPoints(loadPoints("./txt/week3/input9.txt"));
 //        FCP10 = new FastCollinearPoints(loadPoints("./txt/week3/input10.txt"));
 //        FCP20 = new FastCollinearPoints(loadPoints("./txt/week3/input20.txt"));
@@ -80,8 +80,8 @@ public class FastCollinearPointsTest {
     public void testNumberOfSegments() throws Exception {
 //        assertEquals("input1.txt",0,FCP1.numberOfSegments());
 //        assertEquals("input4.txt",1,FCP4.numberOfSegments());
-//        assertEquals("input6.txt",1,FCP6.numberOfSegments());
-        assertEquals("input8.txt",2,FCP8.numberOfSegments());
+        assertEquals("input6.txt",1,FCP6.numberOfSegments());
+//        assertEquals("input8.txt",2,FCP8.numberOfSegments());
 //        assertEquals("input9.txt",1,FCP9.numberOfSegments());
 //        assertEquals("input10.txt",2,FCP10.numberOfSegments());
 //        assertEquals("input20.txt",5,FCP20.numberOfSegments());
@@ -95,8 +95,8 @@ public class FastCollinearPointsTest {
     public void testSegments() throws Exception {
 //        assertEquals("input1.txt",0,FCP1.segments().length);
 //        assertEquals("input4.txt",1,FCP4.segments().length);
-//        assertEquals("input6.txt",1,FCP6.segments().length);
-        assertEquals("input8.txt",2,FCP8.segments().length);
+        assertEquals("input6.txt",1,FCP6.segments().length);
+//        assertEquals("input8.txt",2,FCP8.segments().length);
 //        assertEquals("input9.txt",1,FCP9.segments().length);
 //        assertEquals("input10.txt",2,FCP10.segments().length);
 //        assertEquals("input20.txt",5,FCP20.segments().length);

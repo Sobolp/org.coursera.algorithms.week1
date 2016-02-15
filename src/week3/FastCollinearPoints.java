@@ -1,7 +1,6 @@
 package week3;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 /**
  * Created by SoBoLp on 2/14/16.
@@ -44,9 +43,9 @@ public class FastCollinearPoints {
                         for (int a = 1; a < count; a++)
                             related[a] = points[idx - a + 1];
                         Arrays.sort(related);
-                        if (!isFound((related))) {
-                            pointMatrix[index][0] = points[0];
-                            pointMatrix[index][1] = points[count - 1];
+                        if (!isFound(new Point[]{related[0], related[count - 1]})) {
+                            pointMatrix[index][0] = related[0];
+                            pointMatrix[index][1] = related[count - 1];
                             index++;
                         }
                     }
@@ -78,21 +77,16 @@ public class FastCollinearPoints {
         return lineSegments;
     }
 
-    private boolean isEqual(Comparator<Point> c, Point v, Point w) {
-        return c.compare(v, w) == 0;
+    private boolean isEqual(Point v, Point w) {
+        return v.compareTo(w) == 0;
     }
 
     private boolean isFound(Point[] parr) {
         if (index <= 0)
             return false;
         for (int i = 0; i < index; i++) {
-            int count = 0;
-            for (Point pIn : parr) {
-                for (Point pM : pointMatrix[i]) {
-                    if (pIn.compareTo(pM) == 0) count++;
-                }
-            }
-            if (count > 1)
+            if (isEqual(parr[0], pointMatrix[i][0]) &&
+                    isEqual(parr[1], pointMatrix[i][1]))
                 return true;
         }
         return false;
