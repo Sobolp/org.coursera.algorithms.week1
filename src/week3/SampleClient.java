@@ -11,7 +11,8 @@ public class SampleClient {
     public static void main(String[] args) {
 
         // read the N points from a file
-        In in = new In(args[0]);
+        In in = new In("./txt/week3/grid4x4.txt");
+//        In in = new In(args[0]);
         int N = in.readInt();
         Point[] points = new Point[N];
         for (int i = 0; i < N; i++) {
@@ -30,7 +31,8 @@ public class SampleClient {
         StdDraw.show();
 
         // print and draw the line segments
-        BruteCollinearPoints collinear = new BruteCollinearPoints(points);
+//        BruteCollinearPoints collinear = new BruteCollinearPoints(points);
+        FastCollinearPoints collinear = new FastCollinearPoints(points);
         for (LineSegment segment : collinear.segments()) {
             StdOut.println(segment);
             segment.draw();

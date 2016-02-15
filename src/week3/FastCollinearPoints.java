@@ -18,30 +18,38 @@ public class FastCollinearPoints {
     public FastCollinearPoints(Point[] points) {
         if (points.length == 0) throw new NullPointerException("Point[] is null");
         Arrays.sort(points);
+        Point[] tmpPoints = new Point[points.length];
         if (points[0] == null) throw new NullPointerException("Point: " + points[0] + " is null");
+        tmpPoints[0] = points[0];
         for (int i = 1; i < points.length; i++) {
             if (points[i] == null) throw new NullPointerException("Point: " + points[i] + " is null");
             if (points[i - 1].compareTo(points[i]) == 0)
                 throw new IllegalArgumentException("Point: " + points[i - 1] + " is equal to point: " + points[i]);
+            tmpPoints[i] = points[i];
         }
         pointMatrix = new Point[points.length][2];
+
         if (points.length > 3) {
             for (int p = 0; p < points.length; p++) {
-                Arrays.sort(points, points[p].slopeOrder());
+                Arrays.sort(points, tmpPoints[p].slopeOrder());
                 // Check if any 3 (or more) adjacent points in the sorted order have equal slopes with respect to p.
                 // If so, these points, together with p, are collinear.
                 int count = 2;
-                for (int idx = 2; idx < points.length; idx++) {
-                    if (points[0].slopeTo(points[idx - 1]) == points[0].slopeTo(points[idx]))
+                int idx = 1;
+                while (idx < points.length) {
+//                for (; idx < points.length; idx++) {
+                    idx++;
+                    while (idx < points.length && points[0].slopeTo(points[idx - 1]) == points[0].slopeTo(points[idx])) {
                         count++;
-                    else count = 2;
+                        idx++;
+                    }
                     //Check if idx-2 > 3 that
                     // if !isFound add to pointMatrix
                     if (count > 3) {
                         Point[] related = new Point[count];
                         related[0] = points[0];
                         for (int a = 1; a < count; a++)
-                            related[a] = points[idx - a + 1];
+                            related[a] = points[idx - a];
                         Arrays.sort(related);
                         if (!isFound(new Point[]{related[0], related[count - 1]})) {
                             pointMatrix[index][0] = related[0];
@@ -49,7 +57,7 @@ public class FastCollinearPoints {
                             index++;
                         }
                     }
-//                        count = 2;
+                    count = 2;
                 }
             }
         }

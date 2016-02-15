@@ -9,6 +9,8 @@
     <list default="true" id="b26af222-c2d0-446a-bda7-98ddd8a80f1f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/week3/FastCollinearPoints.java" afterPath="$PROJECT_DIR$/src/week3/FastCollinearPoints.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/week3/Point.java" afterPath="$PROJECT_DIR$/src/week3/Point.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/week3/SampleClient.java" afterPath="$PROJECT_DIR$/src/week3/SampleClient.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/week3/FastCollinearPointsTest.java" afterPath="$PROJECT_DIR$/tests/week3/FastCollinearPointsTest.java" />
     </list>
     <ignored path="org.coursera.algorithms.week1.iws" />
@@ -32,11 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Point.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Point.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/week3/Point.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="93" column="24" selection-start-line="93" selection-start-column="15" selection-end-line="93" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.3962264">
+              <caret line="77" column="24" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/src/week3/BruteCollinearPoints.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="82" column="21" selection-start-line="75" selection-start-column="8" selection-end-line="82" selection-end-column="21" />
+              <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1951#1952#0" expanded="true" />
@@ -60,37 +62,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BruteCollinearPointsTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/week3/BruteCollinearPointsTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FastCollinearPoints.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FastCollinearPoints.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/week3/FastCollinearPoints.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39869282">
-              <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="32" />
-              <folding>
-                <element signature="e#2836#2837#0" expanded="true" />
-                <element signature="e#2878#2879#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FastCollinearPointsTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/week3/FastCollinearPointsTest.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
-              <folding />
+              <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+              <folding>
+                <element signature="e#3094#3095#0" expanded="true" />
+                <element signature="e#3136#3137#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -152,16 +132,16 @@
         <option value="$PROJECT_DIR$/txt/regexin.txt" />
         <option value="$PROJECT_DIR$/src/hackerrank/TagRemove.java" />
         <option value="$PROJECT_DIR$/src/week3/LineSegment.java" />
-        <option value="$PROJECT_DIR$/src/week3/SampleClient.java" />
         <option value="$PROJECT_DIR$/tests/week3/PointTest.java" />
         <option value="$PROJECT_DIR$/txt/input8.txt" />
         <option value="$PROJECT_DIR$/txt/input6.txt" />
         <option value="$PROJECT_DIR$/txt/week3/input4.txt" />
-        <option value="$PROJECT_DIR$/src/week3/Point.java" />
         <option value="$PROJECT_DIR$/tests/week3/BruteCollinearPointsTest.java" />
+        <option value="$PROJECT_DIR$/tests/week3/FastCollinearPointsTest.java" />
+        <option value="$PROJECT_DIR$/src/week3/SampleClient.java" />
         <option value="$PROJECT_DIR$/src/week3/BruteCollinearPoints.java" />
         <option value="$PROJECT_DIR$/src/week3/FastCollinearPoints.java" />
-        <option value="$PROJECT_DIR$/tests/week3/FastCollinearPointsTest.java" />
+        <option value="$PROJECT_DIR$/src/week3/Point.java" />
       </list>
     </option>
   </component>
@@ -381,7 +361,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -440,7 +420,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FastCollinearPointsTest.testNumberOfSegments">
+  <component name="RunManager" selected="Application.SampleClient">
     <configuration default="false" name="BruteCollinearPointsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -455,32 +435,6 @@
       <option name="MAIN_CLASS_NAME" value="week3.BruteCollinearPointsTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="BruteCollinearPointsTest.testBruteCollinearPointsExeption" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="week3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="org.coursera.algorithms.week1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="week3" />
-      <option name="MAIN_CLASS_NAME" value="week3.BruteCollinearPointsTest" />
-      <option name="METHOD_NAME" value="testBruteCollinearPointsExeption" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -569,6 +523,26 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="SampleClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="week3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="week3.SampleClient" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="org.coursera.algorithms.week1" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -988,18 +962,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.BruteCollinearPointsTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.BruteCollinearPointsTest.testBruteCollinearPointsExeption" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.FastCollinearPointsTest.testFastCollinearPointsExeption" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.FastCollinearPointsTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.FastCollinearPointsTest.testNumberOfSegments" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.FastCollinearPointsTest.testFastCollinearPointsExeption" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.FastCollinearPointsTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.FastCollinearPointsTest.testNumberOfSegments" />
+      <item index="4" class="java.lang.String" itemvalue="Application.SampleClient" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.FastCollinearPointsTest.testNumberOfSegments" />
+        <item index="0" class="java.lang.String" itemvalue="Application.SampleClient" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.FastCollinearPointsTest" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.BruteCollinearPointsTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.FastCollinearPointsTest.testFastCollinearPointsExeption" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BruteCollinearPointsTest.testBruteCollinearPointsExeption" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.FastCollinearPointsTest.testNumberOfSegments" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.FastCollinearPointsTest.testFastCollinearPointsExeption" />
       </list>
     </recent_temporary>
   </component>
@@ -1029,7 +1003,7 @@
       <workItem from="1455279886461" duration="2171000" />
       <workItem from="1455295057368" duration="25000" />
       <workItem from="1455301075333" duration="226000" />
-      <workItem from="1455356396148" duration="82936000" />
+      <workItem from="1455356396148" duration="88650000" />
     </task>
     <task id="LOCAL-00001" summary="week1_1">
       <created>1453845061157</created>
@@ -1175,43 +1149,49 @@
       <option name="project" value="LOCAL" />
       <updated>1455562105598</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="week3&#10;v 0.1.2&#10; FastCollinearPoints still not well">
+      <created>1455563311855</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1455563311855</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FastCollinearPointsTest_testNumberOfSegments - 2016.02.15 at 20h 45m 30s.xml">
-      <configuration name="FastCollinearPointsTest.testNumberOfSegments" configurationId="JUnit" />
+    <history-entry file="BruteCollinearPointsTest - 2016.02.15 at 21h 36m 01s.xml">
+      <configuration name="BruteCollinearPointsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FastCollinearPointsTest_testNumberOfSegments - 2016.02.15 at 20h 45m 53s.xml">
-      <configuration name="FastCollinearPointsTest.testNumberOfSegments" configurationId="JUnit" />
+    <history-entry file="BruteCollinearPointsTest - 2016.02.15 at 21h 38m 49s.xml">
+      <configuration name="BruteCollinearPointsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FastCollinearPointsTest_testNumberOfSegments - 2016.02.15 at 20h 46m 11s.xml">
-      <configuration name="FastCollinearPointsTest.testNumberOfSegments" configurationId="JUnit" />
+    <history-entry file="FastCollinearPointsTest - 2016.02.15 at 21h 24m 55s.xml">
+      <configuration name="FastCollinearPointsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FastCollinearPointsTest_testNumberOfSegments - 2016.02.15 at 20h 58m 06s.xml">
-      <configuration name="FastCollinearPointsTest.testNumberOfSegments" configurationId="JUnit" />
+    <history-entry file="FastCollinearPointsTest - 2016.02.15 at 21h 30m 38s.xml">
+      <configuration name="FastCollinearPointsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FastCollinearPointsTest_testNumberOfSegments - 2016.02.15 at 20h 58m 27s.xml">
-      <configuration name="FastCollinearPointsTest.testNumberOfSegments" configurationId="JUnit" />
+    <history-entry file="FastCollinearPointsTest - 2016.02.15 at 21h 33m 29s.xml">
+      <configuration name="FastCollinearPointsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FastCollinearPointsTest_testNumberOfSegments - 2016.02.15 at 20h 58m 30s.xml">
-      <configuration name="FastCollinearPointsTest.testNumberOfSegments" configurationId="JUnit" />
+    <history-entry file="FastCollinearPointsTest - 2016.02.15 at 21h 35m 45s.xml">
+      <configuration name="FastCollinearPointsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FastCollinearPointsTest_testNumberOfSegments - 2016.02.15 at 21h 03m 02s.xml">
-      <configuration name="FastCollinearPointsTest.testNumberOfSegments" configurationId="JUnit" />
+    <history-entry file="FastCollinearPointsTest - 2016.02.15 at 21h 37m 29s.xml">
+      <configuration name="FastCollinearPointsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FastCollinearPointsTest_testNumberOfSegments - 2016.02.15 at 21h 03m 44s.xml">
-      <configuration name="FastCollinearPointsTest.testNumberOfSegments" configurationId="JUnit" />
+    <history-entry file="FastCollinearPointsTest - 2016.02.15 at 21h 37m 47s.xml">
+      <configuration name="FastCollinearPointsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FastCollinearPointsTest_testNumberOfSegments - 2016.02.15 at 21h 04m 18s.xml">
-      <configuration name="FastCollinearPointsTest.testNumberOfSegments" configurationId="JUnit" />
+    <history-entry file="FastCollinearPointsTest - 2016.02.15 at 23h 39m 15s.xml">
+      <configuration name="FastCollinearPointsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FastCollinearPointsTest_testNumberOfSegments - 2016.02.15 at 21h 07m 12s.xml">
+    <history-entry file="FastCollinearPointsTest_testNumberOfSegments - 2016.02.15 at 21h 37m 21s.xml">
       <configuration name="FastCollinearPointsTest.testNumberOfSegments" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="256686000" />
+    <option name="totallyTimeSpent" value="262400000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1234,7 +1214,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33653846" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771084" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32771084" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31325302" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24105866" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1244,7 +1224,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.413253" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.413253" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1289,7 +1269,8 @@
     <MESSAGE value="week3&#10;v 0.01&#10;BruteCollinearPoints test20 does not work yet&#10;isFound is needed to fix" />
     <MESSAGE value="week3&#10;v 0.1&#10;BruteCollinearPoints looks good&#10;started work with FastCollinearPoints" />
     <MESSAGE value="week3&#10;v 0.1.1&#10; FastCollinearPoints still not well" />
-    <option name="LAST_COMMIT_MESSAGE" value="week3&#10;v 0.1.1&#10; FastCollinearPoints still not well" />
+    <MESSAGE value="week3&#10;v 0.1.2&#10; FastCollinearPoints still not well" />
+    <option name="LAST_COMMIT_MESSAGE" value="week3&#10;v 0.1.2&#10; FastCollinearPoints still not well" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1410,33 +1391,51 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/week3/FastCollinearPoints.java</url>
-          <line>33</line>
+          <line>48</line>
           <properties />
-          <option name="timeStamp" value="107" />
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/week3/SampleClient.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/week3/FastCollinearPoints.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/week3/FastCollinearPoints.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/week3/FastCollinearPoints.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="118" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="108" />
+      <option name="time" value="119" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="related" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/week2/RandomizedQueueTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/week2/Subset.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1637,11 +1636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/txt/week3/input6.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.666667">
@@ -1674,26 +1668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/txt/week3/input40.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/txt/week3/input20.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/txt/week3/input200.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/txt/week3/input400.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/week3/LineSegment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7568579">
@@ -1714,16 +1688,6 @@
         <state vertical-scroll-proportion="0.09351621">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="33" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week3/SampleClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46758103">
-          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1767,31 +1731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/txt/week3/input9.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/txt/week3/input10.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week3/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="93" column="24" selection-start-line="93" selection-start-column="15" selection-end-line="93" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/txt/week3/input8.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.71570575">
@@ -1808,10 +1747,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/txt/week3/input6.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/txt/week3/input8.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/txt/week3/input10.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/txt/week3/input400.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/txt/week3/input200.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/txt/week3/input9.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/txt/week3/input20.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/txt/week3/input40.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/txt/week3/input40.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week3/SampleClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9433962">
+          <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/week3/FastCollinearPointsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.7452831">
+          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/week3/BruteCollinearPointsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36792454">
+          <caret line="52" column="52" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/week3/BruteCollinearPoints.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="82" column="21" selection-start-line="75" selection-start-column="8" selection-end-line="82" selection-end-column="21" />
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1951#1952#0" expanded="true" />
@@ -1822,31 +1837,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/week3/BruteCollinearPointsTest.java">
+    <entry file="file://$PROJECT_DIR$/src/week3/FastCollinearPoints.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#3094#3095#0" expanded="true" />
+            <element signature="e#3136#3137#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/week3/FastCollinearPointsTest.java">
+    <entry file="file://$PROJECT_DIR$/src/week3/Point.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week3/FastCollinearPoints.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39869282">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.3962264">
+          <caret line="77" column="24" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
           <folding>
-            <element signature="e#2836#2837#0" expanded="true" />
-            <element signature="e#2878#2879#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1922,6 +1929,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
