@@ -21,6 +21,9 @@ public class BruteCollinearPointsTest {
     BruteCollinearPoints BCP9;
     BruteCollinearPoints BCP10;
     BruteCollinearPoints BCP20;
+    BruteCollinearPoints BCP40;
+    BruteCollinearPoints BCP200;
+    BruteCollinearPoints BCP400;
 
     private Point[] loadPoints(String fileName) throws FileNotFoundException {
         Point[] points;
@@ -38,29 +41,44 @@ public class BruteCollinearPointsTest {
 
     @Before
     public void setUp() throws Exception {
-//        BCP1 = new BruteCollinearPoints(loadPoints("./txt/week3/input1.txt"));
-//        BCP4 = new BruteCollinearPoints(loadPoints("./txt/week3/input4.txt"));
-//        BCP6 = new BruteCollinearPoints(loadPoints("./txt/week3/input6.txt"));
-//        BCP8 = new BruteCollinearPoints(loadPoints("./txt/week3/input8.txt"));
-//        BCP9 = new BruteCollinearPoints(loadPoints("./txt/week3/input9.txt"));
-//        BCP10 = new BruteCollinearPoints(loadPoints("./txt/week3/input10.txt"));
+        BCP1 = new BruteCollinearPoints(loadPoints("./txt/week3/input1.txt"));
+        BCP4 = new BruteCollinearPoints(loadPoints("./txt/week3/input4.txt"));
+        BCP6 = new BruteCollinearPoints(loadPoints("./txt/week3/input6.txt"));
+        BCP8 = new BruteCollinearPoints(loadPoints("./txt/week3/input8.txt"));
+        BCP9 = new BruteCollinearPoints(loadPoints("./txt/week3/input9.txt"));
+        BCP10 = new BruteCollinearPoints(loadPoints("./txt/week3/input10.txt"));
         BCP20 = new BruteCollinearPoints(loadPoints("./txt/week3/input20.txt"));
-
+        BCP40 = new BruteCollinearPoints(loadPoints("./txt/week3/input40.txt"));
+        BCP200 = new BruteCollinearPoints(loadPoints("./txt/week3/input200.txt"));
+        BCP400 = new BruteCollinearPoints(loadPoints("./txt/week3/input400.txt"));
     }
 
     @Test
     public void testNumberOfSegments() throws Exception {
-//        assertEquals("input1.txt",0,BCP1.numberOfSegments());
-//        assertEquals("input4.txt",1,BCP4.numberOfSegments());
-//        assertEquals("input6.txt",1,BCP6.numberOfSegments());
-//        assertEquals("input8.txt",2,BCP8.numberOfSegments());
-//        assertEquals("input9.txt",1,BCP9.numberOfSegments());
-//        assertEquals("input10.txt",2,BCP10.numberOfSegments());
+        assertEquals("input1.txt",0,BCP1.numberOfSegments());
+        assertEquals("input4.txt",1,BCP4.numberOfSegments());
+        assertEquals("input6.txt",1,BCP6.numberOfSegments());
+        assertEquals("input8.txt",2,BCP8.numberOfSegments());
+        assertEquals("input9.txt",1,BCP9.numberOfSegments());
+        assertEquals("input10.txt",2,BCP10.numberOfSegments());
         assertEquals("input20.txt",5,BCP20.numberOfSegments());
+        assertEquals("input40.txt",4,BCP40.numberOfSegments());
+        assertEquals("input200.txt",4,BCP200.numberOfSegments());
+        assertEquals("input400.txt",7,BCP400.numberOfSegments());
     }
 
     @Test
     public void testSegments() throws Exception {
+        assertEquals("input1.txt",0,BCP1.segments().length);
+        assertEquals("input4.txt",1,BCP4.segments().length);
+        assertEquals("input6.txt",1,BCP6.segments().length);
+        assertEquals("input8.txt",2,BCP8.segments().length);
+        assertEquals("input9.txt",1,BCP9.segments().length);
+        assertEquals("input10.txt",2,BCP10.segments().length);
+        assertEquals("input20.txt",5,BCP20.segments().length);
+        assertEquals("input40.txt",4,BCP40.segments().length);
+        assertEquals("input200.txt",4,BCP200.segments().length);
+        assertEquals("input400.txt",7,BCP400.segments().length);
 
     }
 }

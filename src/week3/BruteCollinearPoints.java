@@ -26,7 +26,7 @@ public class BruteCollinearPoints {
                     if (isEqual(points[p1].slopeOrder(), points[p2], points[p3]))
                         for (int p4 = points.length - 1; p4 > p3; p4--) {
                             if (isEqual(points[p1].slopeOrder(), points[p2], points[p4])) {
-                                if (!isFound((new Point[]{ points[p2], points[p3]}))) {
+                                if (!isFound((new Point[]{points[p2], points[p3]}))) {
                                     pointMatrix[index][0] = points[p1];
                                     pointMatrix[index][1] = points[p4];
                                     index++;
@@ -57,7 +57,7 @@ public class BruteCollinearPoints {
      * @return
      */
     public LineSegment[] segments() {
-        LineSegment[] lineSegments=new LineSegment[index];
+        LineSegment[] lineSegments = new LineSegment[index];
         for (int i = 0; i < index; i++)
             lineSegments[i] = new LineSegment(pointMatrix[i][0], pointMatrix[i][1]);
         return lineSegments;
@@ -71,14 +71,10 @@ public class BruteCollinearPoints {
         if (index <= 0)
             return false;
         for (int i = 0; i < index; i++) {
-            for (Point point : parr) {
-                if (!isEqual(pointMatrix[i][0].slopeOrder(), point, pointMatrix[i][1]))
-                    if (i == index-1)
-                        return false;
-                    else break;
-            }
-
+            if (isEqual(pointMatrix[i][0].slopeOrder(), parr[0], pointMatrix[i][1]) &&
+                    isEqual(pointMatrix[i][0].slopeOrder(), parr[1], pointMatrix[i][1]))
+                return true;
         }
-        return true;
+        return false;
     }
 }
