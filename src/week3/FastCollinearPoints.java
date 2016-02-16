@@ -41,7 +41,6 @@ public class FastCollinearPoints {
                     if (lastSlope == currSlope)
                         count++;
                     else {
-
                         if (count > 3) {
                             addLine(count, localPoints, idx, p, lastSlope);
                         }
@@ -111,19 +110,11 @@ public class FastCollinearPoints {
 
             for (int a = 1; a < count; a++) {
                 related[a] = localPoints[idx - count + a];
-//            if (related[0].compareTo(related[a]) > 0) {
-//                isSorted = false;
-//                break;
-//            }
             }
             Arrays.sort(related);
-//        if (isSorted) {
-            if (!isFound(new Point[]{related[0], related[related.length - 1]})) {
-                pointMatrix[index][0] = related[0];
-                pointMatrix[index][1] = related[related.length - 1];
-                index++;
-            }
-//        }
+            pointMatrix[index][0] = related[0];
+            pointMatrix[index][1] = related[related.length - 1];
+            index++;
         }
     }
 
