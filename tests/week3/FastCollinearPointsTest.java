@@ -105,4 +105,5 @@ public class FastCollinearPointsTest {
 //        assertEquals("input400.txt", 7, FCP400.segments().length);
 
     }
+
 }

@@ -11,7 +11,7 @@ public class SampleClient {
     public static void main(String[] args) {
 
         // read the N points from a file
-        In in = new In("./txt/week3/input8.txt");
+        In in = new In("./txt/week3/input9.txt");
 //        In in = new In(args[0]);
         int N = in.readInt();
         Point[] points = new Point[N];

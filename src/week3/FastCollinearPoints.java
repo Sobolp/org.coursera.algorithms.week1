@@ -1,6 +1,7 @@
-package week3;
+//package week3;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 /**
  * Created by SoBoLp on 2/14/16.
@@ -27,29 +28,38 @@ public class FastCollinearPoints {
                 throw new IllegalArgumentException("Point: " + localPoints[i - 1] + " is equal to point: " + localPoints[i]);
         }
         pointMatrix = new Point[localPoints.length * localPoints.length][2];
-
+        boolean isOk = true;
         if (localPoints.length > 2) {
             for (int p = 0; p < localPoints.length - 1; p++) {
-                Arrays.sort(localPoints, p, localPoints.length, tmpPoints[p].slopeOrder());
+                localPoints = tmpPoints.clone();
+//                Arrays.sort(localPoints);
+//                Arrays.sort(localPoints, p, localPoints.length, tmpPoints[p].slopeOrder());
+                sort(localPoints, 0, localPoints.length, tmpPoints[p].slopeOrder());
+//                Arrays.sort(localPoints,tmpPoints[p].slopeOrder());
                 int count = 2;
-                int idx = 1 + p;
-                double lastSlope = localPoints[p].slopeTo(localPoints[idx]);
+//                int idx = 1 + p;
+                int idx = 1;
+                double lastSlope = localPoints[0].slopeTo(localPoints[idx]);
                 idx++;
                 double currSlope;
+
                 while (idx < localPoints.length) {
-                    currSlope = localPoints[p].slopeTo(localPoints[idx]);
-                    if (lastSlope == currSlope)
+                    currSlope = localPoints[0].slopeTo(localPoints[idx]);
+                    if (lastSlope == currSlope) {
+                        if (localPoints[0].compareTo(localPoints[idx - 1]) > 0)
+                            isOk = false;
                         count++;
-                    else {
-                        if (count > 3) {
+                    } else {
+                        if (count > 3 && isOk) {
                             addLine(count, localPoints, idx, p, lastSlope);
                         }
                         count = 2;
+                        isOk = true;
                     }
                     lastSlope = currSlope;
                     idx++;
                 }
-                if (count > 3)
+                if (count > 3 && isOk)
                     addLine(count, localPoints, idx, p, lastSlope);
             }
         }
@@ -77,6 +87,7 @@ public class FastCollinearPoints {
         return lineSegments.clone();
     }
 
+/*
     private boolean isEqual(Point v, Point w) {
         return v.compareTo(w) == 0;
     }
@@ -91,31 +102,78 @@ public class FastCollinearPoints {
         }
         return false;
     }
+*/
 
     private void addLine(int count, Point[] localPoints, int idx, int p, double lastSlope) {
-        Point[] related = new Point[count];
-        related[0] = localPoints[p];
-        int leftIdx = p - 1;
-        double leftCurrSlope;
-        boolean isNew = true;
-        while (leftIdx >= 0) {
-            leftCurrSlope = localPoints[p].slopeTo(localPoints[leftIdx]);
-            if (lastSlope == leftCurrSlope) {
-                isNew = false;
-                break;
-            }
-            leftIdx--;
-        }
-        if (isNew) {
+//        Point[] related = new Point[count];
+//        related[0] = localPoints[p];
+//        int leftIdx = p - 1;
+//        double leftCurrSlope;
+//        boolean isNew = true;
+//        while (leftIdx >= 0) {
+//            leftCurrSlope = localPoints[p].slopeTo(localPoints[leftIdx]);
+//            if (lastSlope == leftCurrSlope) {
+//                isNew = false;
+//                break;
+//            }
+//            leftIdx--;
+//        }
+//        if (isNew) {
 
-            for (int a = 1; a < count; a++) {
-                related[a] = localPoints[idx - count + a];
-            }
-            Arrays.sort(related);
-            pointMatrix[index][0] = related[0];
-            pointMatrix[index][1] = related[related.length - 1];
-            index++;
+//            for (int a = 1; a < count; a++) {
+//                related[a] = localPoints[idx - count + a];
+//            }
+//            Arrays.sort(related);
+//            pointMatrix[index][0] = related[0];
+//            pointMatrix[index][1] = related[related.length - 1];
+//            pointMatrix[index][0] = localPoints[p];
+        pointMatrix[index][0] = localPoints[0];
+        pointMatrix[index][1] = localPoints[idx - 1];
+        index++;
+//        }
+    }
+
+    private static void merge(Point[] a, Point[] aux, int lo, int mid, int hi, Comparator<Point> c) {
+        for (int k = lo; k <= hi; k++)
+            aux[k] = a[k];
+        int i = lo, j = mid + 1;
+        for (int k = lo; k <= hi; k++) {
+            if (i > mid)
+                a[k] = aux[j++];
+//                aux[k] = a[j++];
+            else if (j > hi)
+                a[k] = aux[i++];
+//                aux[k] = a[i++];
+            else if (less(c, aux[j], aux[i]))
+//            else if (less(c, a[j], a[i]))
+                a[k] = aux[j++];
+//                aux[k] = a[j++];
+            else
+                a[k] = aux[i++];
+//                aux[k] = a[i++];
         }
     }
 
+    private static boolean less(Comparator<Point> c, Point v, Point w) {
+        return c.compare(v, w) < 0;
+    }
+
+    private static void sort(Point[] a, Point[] aux, int lo, int hi, Comparator<Point> c) {
+        if (hi <= lo) return;
+        int mid = lo + (hi - lo) / 2;
+        sort(a, aux, lo, mid, c);
+        sort(a, aux, mid + 1, hi, c);
+//        sort(aux, a, lo, mid, c);
+//        sort(aux, a, mid + 1, hi, c);
+        if (!less(c, a[mid + 1], a[mid])) return;
+        merge(a, aux, lo, mid, hi, c);
+    }
+
+    private static void sort(Point[] a, int lo, int hi, Comparator<Point> c) {
+        Point[] aux = new Point[a.length];
+//        Point[] aux = a.clone();
+//        for (int i =0;i < a.length;i++)
+//            aux[i] = a[i];
+        sort(a, aux, lo, hi - 1, c);
+    }
 }
