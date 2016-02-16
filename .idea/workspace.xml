@@ -11,8 +11,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/week3/BruteCollinearPoints.java" afterPath="$PROJECT_DIR$/src/week3/BruteCollinearPoints.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/week3/FastCollinearPoints.java" afterPath="$PROJECT_DIR$/src/week3/FastCollinearPoints.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/week3/Point.java" afterPath="$PROJECT_DIR$/src/week3/Point.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/week3/SampleClient.java" afterPath="$PROJECT_DIR$/src/week3/SampleClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/week3/FastCollinearPointsTest.java" afterPath="$PROJECT_DIR$/tests/week3/FastCollinearPointsTest.java" />
     </list>
     <ignored path="org.coursera.algorithms.week1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,13 +33,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Point.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Point.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/week3/Point.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.116959065">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
               <folding>
-                <element signature="e#0#4365#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -51,33 +49,33 @@
         <entry file="file://$PROJECT_DIR$/src/week3/BruteCollinearPoints.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2287#2288#0" expanded="true" />
-                <element signature="e#2315#2316#0" expanded="true" />
-                <element signature="e#2417#2418#0" expanded="true" />
-                <element signature="e#2460#2461#0" expanded="true" />
-                <element signature="e#2530#2531#0" expanded="true" />
-                <element signature="e#2573#2574#0" expanded="true" />
+                <element signature="e#2285#2286#0" expanded="true" />
+                <element signature="e#2313#2314#0" expanded="true" />
+                <element signature="e#2415#2416#0" expanded="true" />
+                <element signature="e#2458#2459#0" expanded="true" />
+                <element signature="e#2528#2529#0" expanded="true" />
+                <element signature="e#2571#2572#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FastCollinearPoints.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FastCollinearPoints.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/week3/FastCollinearPoints.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2882#2883#0" expanded="true" />
-                <element signature="e#2910#2911#0" expanded="true" />
-                <element signature="e#3012#3013#0" expanded="true" />
-                <element signature="e#3055#3056#0" expanded="true" />
-                <element signature="e#5269#5270#0" expanded="true" />
-                <element signature="e#5311#5312#0" expanded="true" />
+                <element signature="e#2880#2881#0" expanded="true" />
+                <element signature="e#2908#2909#0" expanded="true" />
+                <element signature="e#3010#3011#0" expanded="true" />
+                <element signature="e#3053#3054#0" expanded="true" />
+                <element signature="e#5267#5268#0" expanded="true" />
+                <element signature="e#5309#5310#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -181,9 +179,9 @@
         <option value="$PROJECT_DIR$/txt/week3/input8_.txt" />
         <option value="$PROJECT_DIR$/tests/week3/FastCollinearPointsTest.java" />
         <option value="$PROJECT_DIR$/src/week3/SampleClient.java" />
-        <option value="$PROJECT_DIR$/src/week3/FastCollinearPoints.java" />
-        <option value="$PROJECT_DIR$/src/week3/BruteCollinearPoints.java" />
         <option value="$PROJECT_DIR$/src/week3/Point.java" />
+        <option value="$PROJECT_DIR$/src/week3/BruteCollinearPoints.java" />
+        <option value="$PROJECT_DIR$/src/week3/FastCollinearPoints.java" />
       </list>
     </option>
   </component>
@@ -1076,7 +1074,7 @@
       <workItem from="1455279886461" duration="2171000" />
       <workItem from="1455295057368" duration="25000" />
       <workItem from="1455301075333" duration="226000" />
-      <workItem from="1455356396148" duration="132644000" />
+      <workItem from="1455356396148" duration="132697000" />
     </task>
     <task id="LOCAL-00001" summary="week1_1">
       <created>1453845061157</created>
@@ -1258,7 +1256,13 @@
       <option name="project" value="LOCAL" />
       <updated>1455645868617</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="week3&#10;v2.0.1&#10;Compilation:  PASSED&#10;Style:        PASSED&#10;Findbugs:     No potential bugs found.&#10;API:          PASSED&#10;&#10;Correctness:  39/41 tests passed&#10;Memory:       1/1 tests passed&#10;Timing:       41/41 tests passed&#10;&#10;Aggregate score: 96.83% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]">
+      <created>1455665277872</created>
+      <option name="number" value="00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1455665277872</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1294,7 +1298,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="306394000" />
+    <option name="totallyTimeSpent" value="306447000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1308,7 +1312,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="896" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771084" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1317,7 +1321,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33653846" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32711443" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32711443" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31325302" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23964497" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1348,7 +1352,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="v 0.3 (fix isFull  wrong logic)" />
     <MESSAGE value="v 0.4 (work but  backwash)" />
     <MESSAGE value="v 0.5 (fix  backwash)" />
     <MESSAGE value="v 0.6 (Ok but still problem with memory test )" />
@@ -1373,7 +1376,8 @@
     <MESSAGE value="week3&#10;v1.2.0&#10;problem with FastCollinearPoints performance&#10;Compilation:  PASSED&#10;Style:        FAILED&#10;Findbugs:     No potential bugs found.&#10;API:          PASSED&#10;&#10;Correctness:  41/41 tests passed&#10;Memory:       1/1 tests passed&#10;Timing:       10/41 tests passed&#10;&#10;Aggregate score: 81.10% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]" />
     <MESSAGE value="week3&#10;v1.3.0&#10;problem with FastCollinearPoints performance&#10;Compilation:  PASSED&#10;Style:        FAILED&#10;Findbugs:     No potential bugs found.&#10;API:          PASSED&#10;&#10;Correctness:  41/41 tests passed&#10;Memory:       1/1 tests passed&#10;Timing:       31/41 tests passed&#10;&#10;Aggregate score: 93.90% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]" />
     <MESSAGE value="week3&#10;v2.0.0&#10;Compilation:  PASSED&#10;Style:        PASSED&#10;Findbugs:     No potential bugs found.&#10;API:          PASSED&#10;&#10;Correctness:  41/41 tests passed&#10;Memory:       1/1 tests passed&#10;Timing:       39/41 tests passed&#10;&#10;Aggregate score: 98.78% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]" />
-    <option name="LAST_COMMIT_MESSAGE" value="week3&#10;v2.0.0&#10;Compilation:  PASSED&#10;Style:        PASSED&#10;Findbugs:     No potential bugs found.&#10;API:          PASSED&#10;&#10;Correctness:  41/41 tests passed&#10;Memory:       1/1 tests passed&#10;Timing:       39/41 tests passed&#10;&#10;Aggregate score: 98.78% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]" />
+    <MESSAGE value="week3&#10;v2.0.1&#10;Compilation:  PASSED&#10;Style:        PASSED&#10;Findbugs:     No potential bugs found.&#10;API:          PASSED&#10;&#10;Correctness:  39/41 tests passed&#10;Memory:       1/1 tests passed&#10;Timing:       41/41 tests passed&#10;&#10;Aggregate score: 96.83% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]" />
+    <option name="LAST_COMMIT_MESSAGE" value="week3&#10;v2.0.1&#10;Compilation:  PASSED&#10;Style:        PASSED&#10;Findbugs:     No potential bugs found.&#10;API:          PASSED&#10;&#10;Correctness:  39/41 tests passed&#10;Memory:       1/1 tests passed&#10;Timing:       41/41 tests passed&#10;&#10;Aggregate score: 96.83% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1899,18 +1903,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/week3/FastCollinearPoints.java">
+    <entry file="file://$PROJECT_DIR$/src/week3/Point.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2882#2883#0" expanded="true" />
-            <element signature="e#2910#2911#0" expanded="true" />
-            <element signature="e#3012#3013#0" expanded="true" />
-            <element signature="e#3055#3056#0" expanded="true" />
-            <element signature="e#5269#5270#0" expanded="true" />
-            <element signature="e#5311#5312#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1918,25 +1916,31 @@
     <entry file="file://$PROJECT_DIR$/src/week3/BruteCollinearPoints.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2287#2288#0" expanded="true" />
-            <element signature="e#2315#2316#0" expanded="true" />
-            <element signature="e#2417#2418#0" expanded="true" />
-            <element signature="e#2460#2461#0" expanded="true" />
-            <element signature="e#2530#2531#0" expanded="true" />
-            <element signature="e#2573#2574#0" expanded="true" />
+            <element signature="e#2285#2286#0" expanded="true" />
+            <element signature="e#2313#2314#0" expanded="true" />
+            <element signature="e#2415#2416#0" expanded="true" />
+            <element signature="e#2458#2459#0" expanded="true" />
+            <element signature="e#2528#2529#0" expanded="true" />
+            <element signature="e#2571#2572#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/week3/Point.java">
+    <entry file="file://$PROJECT_DIR$/src/week3/FastCollinearPoints.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.116959065">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
           <folding>
-            <element signature="e#0#4365#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2880#2881#0" expanded="true" />
+            <element signature="e#2908#2909#0" expanded="true" />
+            <element signature="e#3010#3011#0" expanded="true" />
+            <element signature="e#3053#3054#0" expanded="true" />
+            <element signature="e#5267#5268#0" expanded="true" />
+            <element signature="e#5309#5310#0" expanded="true" />
           </folding>
         </state>
       </provider>
