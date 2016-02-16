@@ -8,6 +8,7 @@ import java.util.Arrays;
 public class FastCollinearPoints {
 
     private Point[][] pointMatrix;
+    private LineSegment[] lineSegments;
     private int index = 0;
 
     /**
@@ -16,30 +17,32 @@ public class FastCollinearPoints {
      * @param points
      */
     public FastCollinearPoints(Point[] points) {
-        if (points.length == 0) throw new NullPointerException("Point[] is null");
-        Arrays.sort(points);
-        Point[] tmpPoints = new Point[points.length];
-        if (points[0] == null) throw new NullPointerException("Point: " + points[0] + " is null");
-        tmpPoints[0] = points[0];
-        for (int i = 1; i < points.length; i++) {
-            if (points[i] == null) throw new NullPointerException("Point: " + points[i] + " is null");
-            if (points[i - 1].compareTo(points[i]) == 0)
-                throw new IllegalArgumentException("Point: " + points[i - 1] + " is equal to point: " + points[i]);
-            tmpPoints[i] = points[i];
+        Point[] localPoints = points.clone();
+        if (localPoints.length == 0) throw new NullPointerException("Point[] is null");
+        Arrays.sort(localPoints);
+        Point[] tmpPoints = new Point[localPoints.length];
+        if (localPoints[0] == null) throw new NullPointerException("Point: " + localPoints[0] + " is null");
+        tmpPoints[0] = localPoints[0];
+        for (int i = 1; i < localPoints.length; i++) {
+            if (localPoints[i] == null) throw new NullPointerException("Point: " + localPoints[i] + " is null");
+            if (localPoints[i - 1].compareTo(localPoints[i]) == 0)
+                throw new IllegalArgumentException("Point: " + localPoints[i - 1] + " is equal to point: " + localPoints[i]);
+            tmpPoints[i] = localPoints[i];
         }
-        pointMatrix = new Point[points.length * points.length][2];
+        pointMatrix = new Point[localPoints.length * localPoints.length][2];
 
-        if (points.length > 3) {
-            for (int p = 0; p < points.length; p++) {
-                Arrays.sort(points, tmpPoints[p].slopeOrder());
-                // Check if any 3 (or more) adjacent points in the sorted order have equal slopes with respect to p.
-                // If so, these points, together with p, are collinear.
+        if (localPoints.length > 3) {
+            for (int p = 0; p < localPoints.length; p++) {
+                Arrays.sort(localPoints, tmpPoints[p].slopeOrder());
+                // Check if any 3 (or more) adjacent localPoints in the sorted order have equal slopes with respect to p.
+                // If so, these localPoints, together with p, are collinear.
                 int count = 2;
                 int idx = 1;
-                while (idx < points.length) {
-//                for (; idx < points.length; idx++) {
+                while (idx < localPoints.length) {
+//                for (; idx < localPoints.length; idx++) {
                     idx++;
-                    while (idx < points.length && points[0].slopeTo(points[idx - 1]) == points[0].slopeTo(points[idx])) {
+                    while (idx < localPoints.length && localPoints[0].slopeTo(localPoints[idx - 1])
+                            == localPoints[0].slopeTo(localPoints[idx])) {
                         count++;
                         idx++;
                     }
@@ -47,9 +50,9 @@ public class FastCollinearPoints {
                     // if !isFound add to pointMatrix
                     if (count > 3) {
                         Point[] related = new Point[count];
-                        related[0] = points[0];
+                        related[0] = localPoints[0];
                         for (int a = 1; a < count; a++)
-                            related[a] = points[idx - a];
+                            related[a] = localPoints[idx - a];
                         Arrays.sort(related);
                         if (!isFound(new Point[]{related[0], related[count - 1]})) {
                             pointMatrix[index][0] = related[0];
@@ -61,6 +64,9 @@ public class FastCollinearPoints {
                 }
             }
         }
+        lineSegments = new LineSegment[index];
+        for (int i = 0; i < index; i++)
+            lineSegments[i] = new LineSegment(pointMatrix[i][0], pointMatrix[i][1]);
 
     }
 
@@ -79,10 +85,7 @@ public class FastCollinearPoints {
      * @return
      */
     public LineSegment[] segments() {
-        LineSegment[] lineSegments = new LineSegment[index];
-        for (int i = 0; i < index; i++)
-            lineSegments[i] = new LineSegment(pointMatrix[i][0], pointMatrix[i][1]);
-        return lineSegments;
+        return lineSegments.clone();
     }
 
     private boolean isEqual(Point v, Point w) {

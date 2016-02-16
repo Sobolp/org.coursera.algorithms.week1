@@ -9,6 +9,7 @@ import java.util.Comparator;
 public class BruteCollinearPoints {
 
     private Point[][] pointMatrix;
+    private LineSegment[] lineSegments;
     private int index = 0;
 
     /**
@@ -17,26 +18,27 @@ public class BruteCollinearPoints {
      * @param points
      */
     public BruteCollinearPoints(Point[] points) {
+        Point[] tmpPoints = points.clone();
+        if (tmpPoints.length == 0) throw new NullPointerException("Point[] is null");
+        Arrays.sort(tmpPoints);
+        if (tmpPoints[0] == null) throw new NullPointerException("Point: " + tmpPoints[0] + " is null");
+        for (int i = 1; i < tmpPoints.length; i++) {
+            if (tmpPoints[i] == null) throw new NullPointerException("Point: " + tmpPoints[i] + " is null");
+            if (tmpPoints[i - 1].compareTo(tmpPoints[i]) == 0)
+                throw new IllegalArgumentException("Point: " + tmpPoints[i - 1] + " is equal to point: " + tmpPoints[i]);
 
-        if (points.length == 0) throw new NullPointerException("Point[] is null");
-        Arrays.sort(points);
-        if (points[0] == null) throw new NullPointerException("Point: " + points[0] + " is null");
-        for (int i = 1; i < points.length; i++) {
-            if (points[i] == null) throw new NullPointerException("Point: " + points[i] + " is null");
-            if (points[i - 1].compareTo(points[i]) == 0)
-                throw new IllegalArgumentException("Point: " + points[i - 1] + " is equal to point: " + points[i]);
         }
 
-        pointMatrix = new Point[points.length][2];
-        for (int p1 = 0; p1 < points.length; p1++) {
-            for (int p2 = p1 + 1; p2 < points.length; p2++) {
-                for (int p3 = p2 + 1; p3 < points.length; p3++) {
-                    if (isEqual(points[p1].slopeOrder(), points[p2], points[p3]))
-                        for (int p4 = points.length - 1; p4 > p3; p4--) {
-                            if (isEqual(points[p1].slopeOrder(), points[p2], points[p4])) {
-                                if (!isFound((new Point[]{points[p2], points[p3]}))) {
-                                    pointMatrix[index][0] = points[p1];
-                                    pointMatrix[index][1] = points[p4];
+        pointMatrix = new Point[tmpPoints.length][2];
+        for (int p1 = 0; p1 < tmpPoints.length; p1++) {
+            for (int p2 = p1 + 1; p2 < tmpPoints.length; p2++) {
+                for (int p3 = p2 + 1; p3 < tmpPoints.length; p3++) {
+                    if (isEqual(tmpPoints[p1].slopeOrder(), tmpPoints[p2], tmpPoints[p3]))
+                        for (int p4 = tmpPoints.length - 1; p4 > p3; p4--) {
+                            if (isEqual(tmpPoints[p1].slopeOrder(), tmpPoints[p2], tmpPoints[p4])) {
+                                if (!isFound((new Point[]{tmpPoints[p2], tmpPoints[p3]}))) {
+                                    pointMatrix[index][0] = tmpPoints[p1];
+                                    pointMatrix[index][1] = tmpPoints[p4];
                                     index++;
                                     break;
                                 }
@@ -45,6 +47,9 @@ public class BruteCollinearPoints {
                 }
             }
         }
+        lineSegments = new LineSegment[index];
+        for (int i = 0; i < index; i++)
+            lineSegments[i] = new LineSegment(pointMatrix[i][0], pointMatrix[i][1]);
     }
 
     /**
@@ -62,10 +67,7 @@ public class BruteCollinearPoints {
      * @return
      */
     public LineSegment[] segments() {
-        LineSegment[] lineSegments = new LineSegment[index];
-        for (int i = 0; i < index; i++)
-            lineSegments[i] = new LineSegment(pointMatrix[i][0], pointMatrix[i][1]);
-        return lineSegments;
+        return lineSegments.clone();
     }
 
     private boolean isEqual(Comparator<Point> c, Point v, Point w) {
