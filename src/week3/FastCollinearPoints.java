@@ -28,21 +28,17 @@ public class FastCollinearPoints {
                 throw new IllegalArgumentException("Point: " + localPoints[i - 1] + " is equal to point: " + localPoints[i]);
         }
         pointMatrix = new Point[localPoints.length * localPoints.length][2];
-        boolean isOk = true;
         if (localPoints.length > 2) {
             for (int p = 0; p < localPoints.length - 1; p++) {
                 localPoints = tmpPoints.clone();
-//                Arrays.sort(localPoints);
-//                Arrays.sort(localPoints, p, localPoints.length, tmpPoints[p].slopeOrder());
                 sort(localPoints, 0, localPoints.length, tmpPoints[p].slopeOrder());
 //                Arrays.sort(localPoints,tmpPoints[p].slopeOrder());
                 int count = 2;
-//                int idx = 1 + p;
+                boolean isOk = true;
                 int idx = 1;
                 double lastSlope = localPoints[0].slopeTo(localPoints[idx]);
                 idx++;
                 double currSlope;
-
                 while (idx < localPoints.length) {
                     currSlope = localPoints[0].slopeTo(localPoints[idx]);
                     if (lastSlope == currSlope) {
@@ -51,7 +47,7 @@ public class FastCollinearPoints {
                         count++;
                     } else {
                         if (count > 3 && isOk) {
-                            addLine(count, localPoints, idx, p, lastSlope);
+                            addLine(localPoints, idx);
                         }
                         count = 2;
                         isOk = true;
@@ -60,7 +56,7 @@ public class FastCollinearPoints {
                     idx++;
                 }
                 if (count > 3 && isOk)
-                    addLine(count, localPoints, idx, p, lastSlope);
+                    addLine(localPoints, idx);
             }
         }
         lineSegments = new LineSegment[index];
@@ -87,50 +83,12 @@ public class FastCollinearPoints {
         return lineSegments.clone();
     }
 
-/*
-    private boolean isEqual(Point v, Point w) {
-        return v.compareTo(w) == 0;
-    }
 
-    private boolean isFound(Point[] parr) {
-        if (index <= 0)
-            return false;
-        for (int i = 0; i < index; i++) {
-            if (isEqual(parr[0], pointMatrix[i][0]) &&
-                    isEqual(parr[1], pointMatrix[i][1]))
-                return true;
-        }
-        return false;
-    }
-*/
+    private void addLine( Point[] localPoints, int idx) {
 
-    private void addLine(int count, Point[] localPoints, int idx, int p, double lastSlope) {
-//        Point[] related = new Point[count];
-//        related[0] = localPoints[p];
-//        int leftIdx = p - 1;
-//        double leftCurrSlope;
-//        boolean isNew = true;
-//        while (leftIdx >= 0) {
-//            leftCurrSlope = localPoints[p].slopeTo(localPoints[leftIdx]);
-//            if (lastSlope == leftCurrSlope) {
-//                isNew = false;
-//                break;
-//            }
-//            leftIdx--;
-//        }
-//        if (isNew) {
-
-//            for (int a = 1; a < count; a++) {
-//                related[a] = localPoints[idx - count + a];
-//            }
-//            Arrays.sort(related);
-//            pointMatrix[index][0] = related[0];
-//            pointMatrix[index][1] = related[related.length - 1];
-//            pointMatrix[index][0] = localPoints[p];
         pointMatrix[index][0] = localPoints[0];
         pointMatrix[index][1] = localPoints[idx - 1];
         index++;
-//        }
     }
 
     private static void merge(Point[] a, Point[] aux, int lo, int mid, int hi, Comparator<Point> c) {
