@@ -1,7 +1,6 @@
 package week3;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 /**
  * Created by SoBoLp on 2/14/16.
@@ -31,8 +30,8 @@ public class FastCollinearPoints {
         if (localPoints.length > 2) {
             for (int p = 0; p < localPoints.length - 1; p++) {
                 localPoints = tmpPoints.clone();
-                sort(localPoints, 0, localPoints.length, tmpPoints[p].slopeOrder());
-//                Arrays.sort(localPoints,tmpPoints[p].slopeOrder());
+//                sort(localPoints, 0, localPoints.length, tmpPoints[p].slopeOrder());
+                Arrays.sort(localPoints, tmpPoints[p].slopeOrder());
                 int count = 2;
                 boolean isOk = true;
                 int idx = 1;
@@ -84,12 +83,13 @@ public class FastCollinearPoints {
     }
 
 
-    private void addLine( Point[] localPoints, int idx) {
+    private void addLine(Point[] localPoints, int idx) {
 
         pointMatrix[index][0] = localPoints[0];
         pointMatrix[index][1] = localPoints[idx - 1];
         index++;
     }
+/*
 
     private static void merge(Point[] a, Point[] aux, int lo, int mid, int hi, Comparator<Point> c) {
         for (int k = lo; k <= hi; k++)
@@ -134,4 +134,5 @@ public class FastCollinearPoints {
 //            aux[i] = a[i];
         sort(a, aux, lo, hi - 1, c);
     }
+*/
 }
