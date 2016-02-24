@@ -15,7 +15,7 @@ import java.util.Collections;
  * Created by SoBoLp on 2/20/16.
  */
 public class Solver {
-    private int steps;
+    private int moves;
     private final Board initial;
     private final boolean isSolvable;
     private List<Board> solution;
@@ -27,12 +27,14 @@ public class Solver {
      */
     public Solver(Board initial) {
         this.initial = initial;
-        this.steps = 0;
         solution = getSolution();
         if (solution == null) {
             isSolvable = false;
-            steps = 0;
-        } else isSolvable = true;
+            moves = 0;
+        } else {
+            isSolvable = true;
+            moves = solution.size();
+        }
 
     }
 
@@ -51,7 +53,7 @@ public class Solver {
      * @return
      */
     public int moves() {
-        return steps - 1;
+        return moves - 1;
     }
 
     /**
@@ -64,12 +66,13 @@ public class Solver {
     }
 
     private List<Board> getSolution() {
+        int steps = 0;
         Board tmpBoard = initial;
         Board twinBoard = initial.twin();
 //        HashMap<Board, Board> parents = new HashMap<>();
         HashMap<QueueElement, QueueElement> parents = new HashMap<>();
-        ArrayList<QueueElement> visited = new ArrayList<>();
-        ArrayList<QueueElement> twinVisited = new ArrayList<>();
+        ArrayList<Board> visited = new ArrayList<>();
+        ArrayList<Board> twinVisited = new ArrayList<>();
         MinPQ<QueueElement> pq = new MinPQ<>();
         MinPQ<QueueElement> twinPq = new MinPQ<>();
         QueueElement first = new QueueElement(tmpBoard, steps);
@@ -80,15 +83,15 @@ public class Solver {
         while (!pq.isEmpty()) {
             QueueElement curr = pq.delMin();
             QueueElement twinCurr = twinPq.delMin();
-            if (!visited.contains(curr)) {
-                visited.add(curr);
+            if (!visited.contains(curr.getBoard())) {
+                visited.add(curr.getBoard());
                 steps++;
                 if (curr.getBoard().isGoal()) {
                     return getPath(parents, curr);
                 }
             }
-            if (!twinVisited.contains(twinCurr)) {
-                twinVisited.add(twinCurr);
+            if (!twinVisited.contains(twinCurr.getBoard())) {
+                twinVisited.add(twinCurr.getBoard());
                 if (twinCurr.getBoard().isGoal()) {
                     return null;
                 }
@@ -132,20 +135,27 @@ public class Solver {
     private class QueueElement implements Comparable<QueueElement> {
         private final Board board;
         private final int step;
+        private final int g;
+        private final int h;
 
         public QueueElement(Board board, int step) {
             this.board = board;
             this.step = step;
+            this.g = board.hamming();
+            this.h = board.manhattan();
         }
 
         @Override
         public int compareTo(QueueElement that) {
-            if (this.board == that.board)
-                return 0;
-            if (this.board.manhattan() + step < that.board.manhattan() + that.step)
-                return -1;
-            else
-                return 1;
+            int result = 1;
+            if (this.h + this.step < that.h + that.step)
+                result = -1;
+            else if (this.h + this.step > that.h + that.step)
+                result = 1;
+            else if (this.g > that.g)
+                result = -1;
+
+            return result;
         }
 
         public Board getBoard() {
