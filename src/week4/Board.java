@@ -36,14 +36,16 @@ public class Board {
                     blank = new int[]{x, y};
                 }
                 //hamming
-                if (index == N * N - 1) {
+//                if (index == N * N - 1) {
+                if (x == N - 1 && y == N - 1) {
                     if (this.blocks[index] != 0)
                         hamming++;
                 } else if (index != this.blocks[index] - 1)
-                    hamming++;
+                    if (this.blocks[index] != 0)
+                        hamming++;
                 //manhattan
                 if (blocks[x][y] != 0) {
-                    int[] goal = get2Dcord(blocks[x][y]);
+                    int[] goal = get2Dcord(blocks[x][y] - 1);
                     manhattan += (Math.abs(goal[0] - x) + Math.abs(goal[1] - y));
                 }
             }
@@ -245,11 +247,11 @@ public class Board {
         two[1][1] = 3;
 
         int[][] three = new int[3][3];
-        three[0][0] = 2;
+        three[0][0] = 0;
         three[0][1] = 1;
         three[0][2] = 3;
         three[1][0] = 4;
-        three[1][1] = 0;
+        three[1][1] = 2;
         three[1][2] = 5;
         three[2][0] = 7;
         three[2][1] = 8;
@@ -259,12 +261,13 @@ public class Board {
         System.out.println(board2x2.toString());
         System.out.println(board2x2.twin());
         System.out.print(board3x3.toString());
-        System.out.println(board3x3.twin());
+        System.out.println(board3x3.manhattan());
 
         for (Board board : board3x3.neighbors()) {
             System.out.println(board);
         }
-
+        System.out.println(0 / 3);
+        System.out.println(0 % 3);
 
     }
 }
