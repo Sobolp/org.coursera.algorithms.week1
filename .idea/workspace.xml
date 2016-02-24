@@ -8,6 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b26af222-c2d0-446a-bda7-98ddd8a80f1f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/week4/Board.java" afterPath="$PROJECT_DIR$/src/week4/Board.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/week4/Solver.java" afterPath="$PROJECT_DIR$/src/week4/Solver.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/week4/SolverTestClient.java" afterPath="$PROJECT_DIR$/src/week4/SolverTestClient.java" />
     </list>
@@ -32,23 +33,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Board.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/week4/Board.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
-              <folding />
+              <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+              <folding>
+                <element signature="e#1715#1716#0" expanded="true" />
+                <element signature="e#1745#1746#0" expanded="true" />
+                <element signature="e#1871#1872#0" expanded="true" />
+                <element signature="e#1903#1904#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Solver.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Solver.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/week4/Solver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.1852518">
-              <caret line="76" column="34" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3501#3502#0" expanded="true" />
+                <element signature="e#3536#3537#0" expanded="true" />
+                <element signature="e#3565#3566#0" expanded="true" />
+                <element signature="e#3597#3598#0" expanded="true" />
+                <element signature="e#4014#4015#0" expanded="true" />
+                <element signature="e#4050#4051#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -142,8 +154,8 @@
         <option value="$PROJECT_DIR$/tests/hackerrank/JimAndTheOrders.java" />
         <option value="$PROJECT_DIR$/tests/week4/BoardTest.java" />
         <option value="$PROJECT_DIR$/src/week4/SolverTestClient.java" />
-        <option value="$PROJECT_DIR$/src/week4/Board.java" />
         <option value="$PROJECT_DIR$/src/week4/Solver.java" />
+        <option value="$PROJECT_DIR$/src/week4/Board.java" />
       </list>
     </option>
   </component>
@@ -942,7 +954,7 @@
       <workItem from="1455301075333" duration="226000" />
       <workItem from="1455356396148" duration="134973000" />
       <workItem from="1455830383524" duration="71376000" />
-      <workItem from="1456239404074" duration="17144000" />
+      <workItem from="1456239404074" duration="21592000" />
     </task>
     <task id="LOCAL-00001" summary="week1_1">
       <created>1453845061157</created>
@@ -1160,7 +1172,13 @@
       <option name="project" value="LOCAL" />
       <updated>1456310984836</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="week4&#10;v0.0.3&#10;saving before try use one PQ">
+      <created>1456322125564</created>
+      <option name="number" value="00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1456322125564</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1196,7 +1214,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="397243000" />
+    <option name="totallyTimeSpent" value="401691000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1250,7 +1268,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="v 1.0 (Ok )&#10;Compilation:  PASSED&#10;Style:        PASSED&#10;Findbugs:     No potential bugs found.&#10;API:          PASSED&#10;&#10;Correctness:  26/26 tests passed&#10;Memory:       9/8 tests passed&#10;Timing:       9/9 tests passed&#10;&#10;Aggregate score: 101.25% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]" />
     <MESSAGE value="week2 v 0.01 only Deque" />
     <MESSAGE value="week2 v 0.01 only Deque + RandomizedQueue" />
     <MESSAGE value="week2 v 0.1 only Deque + RandomizedQueue + Subset&#10;90.84 / 100.00" />
@@ -1275,7 +1292,8 @@
     <MESSAGE value="week3&#10;v3.0.0 final&#10;Compilation:  PASSED&#10;Style:        PASSED&#10;Findbugs:     No potential bugs found.&#10;API:          PASSED&#10;&#10;Correctness:  41/41 tests passed&#10;Memory:       1/1 tests passed&#10;Timing:       41/41 tests passed&#10;&#10;Aggregate score: 100.00% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]" />
     <MESSAGE value="week4&#10;v0.0.1" />
     <MESSAGE value="week4&#10;v0.0.2&#10;Compilation:  PASSED&#10;Style:        PASSED&#10;Findbugs:     Potential bugs found.&#10;API:          PASSED&#10;&#10;Correctness:  30/42 tests passed&#10;Memory:       8/8 tests passed&#10;Timing:       0/17 tests passed&#10;&#10;Aggregate score: 56.43% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="week4&#10;v0.0.2&#10;Compilation:  PASSED&#10;Style:        PASSED&#10;Findbugs:     Potential bugs found.&#10;API:          PASSED&#10;&#10;Correctness:  30/42 tests passed&#10;Memory:       8/8 tests passed&#10;Timing:       0/17 tests passed&#10;&#10;Aggregate score: 56.43% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]&#10;" />
+    <MESSAGE value="week4&#10;v0.0.3&#10;saving before try use one PQ" />
+    <option name="LAST_COMMIT_MESSAGE" value="week4&#10;v0.0.3&#10;saving before try use one PQ" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1450,27 +1468,21 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/week4/Board.java</url>
-          <line>263</line>
+          <line>246</line>
           <properties />
           <option name="timeStamp" value="161" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/week4/Solver.java</url>
-          <line>72</line>
+          <line>70</line>
           <properties />
           <option name="timeStamp" value="163" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/week4/Solver.java</url>
-          <line>124</line>
+          <line>100</line>
           <properties />
           <option name="timeStamp" value="164" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/week4/Solver.java</url>
-          <line>89</line>
-          <properties />
-          <option name="timeStamp" value="165" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -1489,13 +1501,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.666667">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runner/JUnitCore.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35416666">
@@ -1820,6 +1825,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/txt/week4/puzzle2x2-02.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/txt/week4/puzzle20.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1836,20 +1849,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/week4/Board.java">
+    <entry file="file://$PROJECT_DIR$/src/week4/Solver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
-          <folding />
+          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3501#3502#0" expanded="true" />
+            <element signature="e#3536#3537#0" expanded="true" />
+            <element signature="e#3565#3566#0" expanded="true" />
+            <element signature="e#3597#3598#0" expanded="true" />
+            <element signature="e#4014#4015#0" expanded="true" />
+            <element signature="e#4050#4051#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/week4/Solver.java">
+    <entry file="file://$PROJECT_DIR$/src/week4/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1852518">
-          <caret line="76" column="34" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1715#1716#0" expanded="true" />
+            <element signature="e#1745#1746#0" expanded="true" />
+            <element signature="e#1871#1872#0" expanded="true" />
+            <element signature="e#1903#1904#0" expanded="true" />
           </folding>
         </state>
       </provider>

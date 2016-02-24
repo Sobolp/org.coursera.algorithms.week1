@@ -66,68 +66,48 @@ public class Solver {
     }
 
     private List<Board> getSolution() {
-        int steps = 0;
         Board tmpBoard = initial;
         Board twinBoard = initial.twin();
-//        HashMap<Board, Board> parents = new HashMap<>();
         HashMap<QueueElement, QueueElement> parents = new HashMap<>();
         ArrayList<Board> visited = new ArrayList<>();
-        ArrayList<Board> twinVisited = new ArrayList<>();
         MinPQ<QueueElement> pq = new MinPQ<>();
-        MinPQ<QueueElement> twinPq = new MinPQ<>();
-        QueueElement first = new QueueElement(tmpBoard, steps);
-        QueueElement twinFirst = new QueueElement(twinBoard, steps);
+        QueueElement first = new QueueElement(tmpBoard, 0);
+        QueueElement twinFirst = new QueueElement(twinBoard, 0);
         pq.insert(first);
-        twinPq.insert(twinFirst);
+        pq.insert(twinFirst);
         parents.put(first, null);
         while (!pq.isEmpty()) {
             QueueElement curr = pq.delMin();
-            QueueElement twinCurr = twinPq.delMin();
             if (!visited.contains(curr.getBoard())) {
                 visited.add(curr.getBoard());
-                steps++;
-                if (curr.getBoard().isGoal()) {
-                    return getPath(parents, curr);
+//                if (curr.getBoard().isGoal()) {
+                if (curr.getG() == 0) {
+                    return getPath(parents, curr, first);
                 }
             }
-            if (!twinVisited.contains(twinCurr.getBoard())) {
-                twinVisited.add(twinCurr.getBoard());
-                if (twinCurr.getBoard().isGoal()) {
-                    return null;
-                }
-            }
-
             for (Board neighbor : curr.getBoard().neighbors()) {
                 if (!visited.contains(neighbor)) {
-//                    if (neighbor.hamming() < curr.getBoard().hamming()) {
-                    QueueElement newQE = new QueueElement(neighbor, steps);
+                    QueueElement newQE = new QueueElement(neighbor, curr.getStep() + 1);
                     parents.put(newQE, curr);
                     pq.insert(newQE);
-//                    }
-                }
-            }
-
-            for (Board neighbor : twinCurr.getBoard().neighbors()) {
-                if (!twinVisited.contains(neighbor)) {
-//                    if (neighbor.hamming() < curr.getBoard().hamming()) {
-                    QueueElement newQE = new QueueElement(neighbor, steps);
-                    twinPq.insert(newQE);
-//                    }
                 }
             }
         }
-
         return null;
     }
 
 
-    private List<Board> getPath(HashMap<QueueElement, QueueElement> parent, QueueElement goal) {
+    private List<Board> getPath(HashMap<QueueElement, QueueElement> parent, QueueElement goal, QueueElement start) {
         List<Board> result = new LinkedList<>();
         QueueElement next = goal;
+        QueueElement last = null;
         do {
             result.add(next.getBoard());
+            last = next;
             next = parent.get(next);
         } while ((next != null));
+        if (last != start)
+            return null;
         Collections.reverse(result);
         return result;
     }
@@ -143,6 +123,15 @@ public class Solver {
             this.step = step;
             this.g = board.hamming();
             this.h = board.manhattan();
+
+        }
+
+        public int getStep() {
+            return step;
+        }
+
+        public int getG() {
+            return g;
         }
 
         @Override
@@ -152,8 +141,8 @@ public class Solver {
                 result = -1;
             else if (this.h + this.step > that.h + that.step)
                 result = 1;
-            else if (this.g > that.g)
-                result = -1;
+//            else if (this.g > that.g)
+//                result = -1;
 
             return result;
         }
@@ -187,22 +176,6 @@ public class Solver {
                 System.out.println(b.toString());
             }
         System.out.println(solv.moves());
-//        int[][] three_unsolveble = new int[3][3];
-//        three_unsolveble[0][0] = 1;
-//        three_unsolveble[0][1] = 2;
-//        three_unsolveble[0][2] = 3;
-//        three_unsolveble[1][0] = 4;
-//        three_unsolveble[1][1] = 5;
-//        three_unsolveble[1][2] = 6;
-//        three_unsolveble[2][0] = 8;
-//        three_unsolveble[2][1] = 7;
-//        three_unsolveble[2][2] = 0;
-//        Board board3x3Unsolveble = new Board(three_unsolveble);
-//        Solver solvUnsolveble = new Solver(board3x3.twin());
-//        System.out.println(solvUnsolveble.moves());
-//        if (solvUnsolveble.isSolvable())
-//            for (Board b : solvUnsolveble.solution()) {
-//                System.out.println(b.toString());
-//            }
+
     }
 }

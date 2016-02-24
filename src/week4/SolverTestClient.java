@@ -10,7 +10,7 @@ public class SolverTestClient {
     public static void main(String[] args) {
 
         // create initial board from file
-        In in = new In("./txt/week4/puzzle12.txt");
+        In in = new In("./txt/week4/puzzle20.txt");
 //        In in = new In(args[0]);
         int N = in.readInt();
         int[][] blocks = new int[N][N];

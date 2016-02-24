@@ -36,7 +36,6 @@ public class Board {
                     blank = new int[]{x, y};
                 }
                 //hamming
-//                if (index == N * N - 1) {
                 if (x == N - 1 && y == N - 1) {
                     if (this.blocks[index] != 0)
                         hamming++;
@@ -68,14 +67,6 @@ public class Board {
      * @return
      */
     public int hamming() {
-        /*int count = 0;
-        for (int x = 0; x < N * N; x++)
-            if (x == N * N - 1) {
-                if (blocks[x] != 0)
-                    count++;
-            } else if (x != blocks[x] - 1)
-                count++;
-        return count;*/
         return hamming;
     }
 
@@ -85,14 +76,6 @@ public class Board {
      * @return
      */
     public int manhattan() {
-        /*int count = 0;
-        for (int x = 0; x < N * N; x++)
-            if (blocks[x] != 0) {
-                int[] goal = get2Dcord(blocks[x]);
-                int[] real = get2Dcord(x);
-                count += (Math.abs(goal[0] - real[0]) + Math.abs(goal[1] - real[1]));
-            }
-        return count;*/
         return manhattan;
     }
 
