@@ -8,7 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b26af222-c2d0-446a-bda7-98ddd8a80f1f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/week4/Board.java" afterPath="$PROJECT_DIR$/src/week4/Board.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/week4/Solver.java" afterPath="$PROJECT_DIR$/src/week4/Solver.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/week4/SolverTestClient.java" afterPath="$PROJECT_DIR$/src/week4/SolverTestClient.java" />
     </list>
@@ -40,10 +39,16 @@
               <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1609#1610#0" expanded="true" />
+                <element signature="e#1638#1639#0" expanded="true" />
                 <element signature="e#1741#1742#0" expanded="true" />
                 <element signature="e#1771#1772#0" expanded="true" />
                 <element signature="e#1897#1898#0" expanded="true" />
                 <element signature="e#1929#1930#0" expanded="true" />
+                <element signature="e#2035#2036#0" expanded="true" />
+                <element signature="e#2072#2073#0" expanded="true" />
+                <element signature="e#5550#5551#0" expanded="true" />
+                <element signature="e#5582#5583#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,17 +58,25 @@
         <entry file="file://$PROJECT_DIR$/src/week4/Solver.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+              <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3675#3676#0" expanded="true" />
-                <element signature="e#3710#3711#0" expanded="true" />
-                <element signature="e#3739#3740#0" expanded="true" />
-                <element signature="e#3771#3772#0" expanded="true" />
-                <element signature="e#3814#3815#0" expanded="true" />
-                <element signature="e#3851#3852#0" expanded="true" />
-                <element signature="e#4672#4673#0" expanded="true" />
-                <element signature="e#4708#4709#0" expanded="true" />
+                <element signature="e#888#889#0" expanded="true" />
+                <element signature="e#921#922#0" expanded="true" />
+                <element signature="e#1053#1054#0" expanded="true" />
+                <element signature="e#1085#1086#0" expanded="true" />
+                <element signature="e#1233#1234#0" expanded="true" />
+                <element signature="e#1264#1265#0" expanded="true" />
+                <element signature="e#3483#3484#0" expanded="true" />
+                <element signature="e#3518#3519#0" expanded="true" />
+                <element signature="e#3547#3548#0" expanded="true" />
+                <element signature="e#3579#3580#0" expanded="true" />
+                <element signature="e#3608#3609#0" expanded="true" />
+                <element signature="e#3640#3641#0" expanded="true" />
+                <element signature="e#3683#3684#0" expanded="true" />
+                <element signature="e#3720#3721#0" expanded="true" />
+                <element signature="e#4086#4087#0" expanded="true" />
+                <element signature="e#4122#4123#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -957,7 +970,7 @@
       <workItem from="1455301075333" duration="226000" />
       <workItem from="1455356396148" duration="134973000" />
       <workItem from="1455830383524" duration="71376000" />
-      <workItem from="1456239404074" duration="46491000" />
+      <workItem from="1456239404074" duration="56973000" />
     </task>
     <task id="LOCAL-00001" summary="week1_1">
       <created>1453845061157</created>
@@ -1187,7 +1200,13 @@
       <option name="project" value="LOCAL" />
       <updated>1456331259875</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="week4&#10;v0.0.5&#10;Compilation:  PASSED&#10;Style:        PASSED&#10;Findbugs:     No potential bugs found.&#10;API:          PASSED&#10;&#10;Correctness:  42/42 tests passed&#10;Memory:       8/8 tests passed&#10;Timing:       11/17 tests passed&#10;&#10;Aggregate score: 91.18% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]">
+      <created>1456401481873</created>
+      <option name="number" value="00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1456401481873</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1223,7 +1242,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="426590000" />
+    <option name="totallyTimeSpent" value="437072000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1246,7 +1265,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33614457" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29638556" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29638556" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31325302" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23962805" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1277,7 +1296,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="week2 v 0.01 only Deque + RandomizedQueue" />
     <MESSAGE value="week2 v 0.1 only Deque + RandomizedQueue + Subset&#10;90.84 / 100.00" />
     <MESSAGE value="week2 v 0.2 only Deque + RandomizedQueue + Subset&#10;94.73 / 100.00" />
     <MESSAGE value="week2 v 0.3 added in Iterator StdRandom.shuffle" />
@@ -1302,7 +1320,8 @@
     <MESSAGE value="week4&#10;v0.0.2&#10;Compilation:  PASSED&#10;Style:        PASSED&#10;Findbugs:     Potential bugs found.&#10;API:          PASSED&#10;&#10;Correctness:  30/42 tests passed&#10;Memory:       8/8 tests passed&#10;Timing:       0/17 tests passed&#10;&#10;Aggregate score: 56.43% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]&#10;" />
     <MESSAGE value="week4&#10;v0.0.3&#10;saving before try use one PQ" />
     <MESSAGE value="week4&#10;v0.0.4&#10;Compilation:  PASSED&#10;Style:        PASSED&#10;Findbugs:     No potential bugs found.&#10;API:          PASSED&#10;&#10;Correctness:  37/42 tests passed&#10;Memory:       8/8 tests passed&#10;Timing:       12/17 tests passed&#10;&#10;Aggregate score: 84.91% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]" />
-    <option name="LAST_COMMIT_MESSAGE" value="week4&#10;v0.0.4&#10;Compilation:  PASSED&#10;Style:        PASSED&#10;Findbugs:     No potential bugs found.&#10;API:          PASSED&#10;&#10;Correctness:  37/42 tests passed&#10;Memory:       8/8 tests passed&#10;Timing:       12/17 tests passed&#10;&#10;Aggregate score: 84.91% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]" />
+    <MESSAGE value="week4&#10;v0.0.5&#10;Compilation:  PASSED&#10;Style:        PASSED&#10;Findbugs:     No potential bugs found.&#10;API:          PASSED&#10;&#10;Correctness:  42/42 tests passed&#10;Memory:       8/8 tests passed&#10;Timing:       11/17 tests passed&#10;&#10;Aggregate score: 91.18% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]" />
+    <option name="LAST_COMMIT_MESSAGE" value="week4&#10;v0.0.5&#10;Compilation:  PASSED&#10;Style:        PASSED&#10;Findbugs:     No potential bugs found.&#10;API:          PASSED&#10;&#10;Correctness:  42/42 tests passed&#10;Memory:       8/8 tests passed&#10;Timing:       11/17 tests passed&#10;&#10;Aggregate score: 91.18% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1477,7 +1496,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/week4/Board.java</url>
-          <line>255</line>
+          <line>262</line>
           <properties />
           <option name="timeStamp" value="161" />
         </line-breakpoint>
@@ -1853,10 +1872,16 @@
           <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1609#1610#0" expanded="true" />
+            <element signature="e#1638#1639#0" expanded="true" />
             <element signature="e#1741#1742#0" expanded="true" />
             <element signature="e#1771#1772#0" expanded="true" />
             <element signature="e#1897#1898#0" expanded="true" />
             <element signature="e#1929#1930#0" expanded="true" />
+            <element signature="e#2035#2036#0" expanded="true" />
+            <element signature="e#2072#2073#0" expanded="true" />
+            <element signature="e#5550#5551#0" expanded="true" />
+            <element signature="e#5582#5583#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1864,17 +1889,25 @@
     <entry file="file://$PROJECT_DIR$/src/week4/Solver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3675#3676#0" expanded="true" />
-            <element signature="e#3710#3711#0" expanded="true" />
-            <element signature="e#3739#3740#0" expanded="true" />
-            <element signature="e#3771#3772#0" expanded="true" />
-            <element signature="e#3814#3815#0" expanded="true" />
-            <element signature="e#3851#3852#0" expanded="true" />
-            <element signature="e#4672#4673#0" expanded="true" />
-            <element signature="e#4708#4709#0" expanded="true" />
+            <element signature="e#888#889#0" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+            <element signature="e#1053#1054#0" expanded="true" />
+            <element signature="e#1085#1086#0" expanded="true" />
+            <element signature="e#1233#1234#0" expanded="true" />
+            <element signature="e#1264#1265#0" expanded="true" />
+            <element signature="e#3483#3484#0" expanded="true" />
+            <element signature="e#3518#3519#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#3579#3580#0" expanded="true" />
+            <element signature="e#3608#3609#0" expanded="true" />
+            <element signature="e#3640#3641#0" expanded="true" />
+            <element signature="e#3683#3684#0" expanded="true" />
+            <element signature="e#3720#3721#0" expanded="true" />
+            <element signature="e#4086#4087#0" expanded="true" />
+            <element signature="e#4122#4123#0" expanded="true" />
           </folding>
         </state>
       </provider>

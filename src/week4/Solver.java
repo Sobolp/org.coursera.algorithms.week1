@@ -7,10 +7,6 @@ import edu.princeton.cs.algorithms.MinPQ;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.TreeSet;
-
-
-
 
 
 /**
@@ -70,37 +66,35 @@ public class Solver {
     private List<Board> getSolution() {
         Board tmpBoard = initial;
         Board twinBoard = initial.twin();
-//        ArrayList<Board> visited = new ArrayList<>();
-        TreeSet<QueueElement> visited = new TreeSet<>();
         MinPQ<QueueElement> pq = new MinPQ<>();
         QueueElement first = new QueueElement(tmpBoard, null, 0);
         QueueElement twinFirst = new QueueElement(twinBoard, null, 0);
         pq.insert(first);
         pq.insert(twinFirst);
-        Board prev = initial;
         while (!pq.isEmpty()) {
             QueueElement curr = pq.delMin();
-//            if (!visited.contains(curr.getBoard())) {
-//                visited.add(curr.getBoard());
-            visited.add(curr);
             if (curr.getG() == 0) {
                 return getPath(curr, first);
             }
-//            }
             for (Board neighbor : curr.getBoard().neighbors()) {
-                if (!prev.equals(neighbor)) {
-//                    if (!visited.contains(neighbor)) {
+                if (!checkPerents(neighbor, curr)) {
                     QueueElement newQE = new QueueElement(neighbor, curr, curr.getStep() + 1);
-                    if (!visited.contains(newQE)) {
-                        pq.insert(newQE);
-                    }
+                    pq.insert(newQE);
                 }
             }
-            prev = curr.getBoard();
         }
         return null;
     }
 
+    private boolean checkPerents(Board neighbor, QueueElement perent) {
+        QueueElement next = perent;
+        while ((next != null)) {
+            if (next.getBoard().equals(neighbor))
+                return true;
+            next = next.getPerent();
+        }
+        return false;
+    }
 
     private List<Board> getPath(QueueElement goal, QueueElement start) {
         List<Board> result = new LinkedList<>();
@@ -143,36 +137,24 @@ public class Solver {
             return g;
         }
 
+        public int getH() {
+            return h;
+        }
+
         public QueueElement getPerent() {
             return perent;
         }
-/*
-
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
-
-            QueueElement that = (QueueElement) o;
-
-            return board.equals(that.board);
-
-        }
-*/
 
 
         @Override
         public int compareTo(QueueElement that) {
+
             if (this.priority < that.priority)
                 return -1;
-            else if (this.priority > that.priority)
+            if (this.priority > that.priority)
                 return 1;
-            else if (this.board.equals(that.board))
-                return 0;
-            else if (this.h < that.h)
+            if (this.h < that.h)
                 return -1;
-//            else if (this.board.equals(that.board))
-//                return 0;
             else
                 return 1;
         }
