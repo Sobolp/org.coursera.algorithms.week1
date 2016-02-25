@@ -4,17 +4,21 @@ import edu.princeton.cs.algorithms.Stack;
 
 //import edu.princeton.cs.algs4.Stack;
 
+import java.util.Arrays;
+
+
 /**
  * Created by SoBoLp on 2/20/16.
  */
 public class Board {
 
     private final int[] blocks;
+//    private final int[][] blocks2D;
     private final int N;
     private int[] blank;
     private int hamming;
     private int manhattan;
-//    private MinPQ<Board> neighborsQ;
+
 
     /**
      * construct a board from an N-by-N array of blocks
@@ -23,7 +27,6 @@ public class Board {
      * @param blocks
      */
     public Board(int[][] blocks) {
-
         this.N = blocks[0].length;
         this.blocks = new int[N * N];
         this.hamming = 0;
@@ -130,9 +133,12 @@ public class Board {
         if (y == null) return false;
         if (y.getClass() != this.getClass()) return false;
         Board that = (Board) y;
-        if (that.dimension() != this.dimension()) return false;
-        for (int i = 0; i < N * N; i++)
-            if (that.blocks[i] != this.blocks[i]) return false;
+        if (that.N != this.N) return false;
+        if (that.hamming != this.hamming) return false;
+        if (that.manhattan != this.manhattan) return false;
+//        for (int i = 0; i < N * N; i++)
+//            if (that.blocks[i] != this.blocks[i]) return false;
+        if (!Arrays.equals(this.blocks, that.blocks)) return false;
 
         return true;
     }
@@ -209,11 +215,14 @@ public class Board {
 
     private int[][] to2Darray() {
         int[][] result = new int[N][N];
-        int[] newcoord;
-        for (int i = 0; i < N * N; i++) {
-            newcoord = get2Dcord(i);
-            result[newcoord[0]][newcoord[1]] = this.blocks[i];
-        }
+//        int[] newcoord;
+//        for (int i = 0; i < N * N; i++) {
+//            newcoord = get2Dcord(i);
+//            result[newcoord[0]][newcoord[1]] = this.blocks[i];
+//        }
+        for (int x = 0; x < N; x++)
+            for (int y = 0; y < N; y++)
+                result[x][y] = this.blocks[getIndexfrom2D(x, y)];
         return result;
     }
 
