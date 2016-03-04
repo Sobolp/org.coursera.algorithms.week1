@@ -91,7 +91,7 @@ public class Solver {
         while ((next != null)) {
             if (next.getBoard().equals(neighbor))
                 return true;
-            next = next.getPerent();
+            next = next.getParent();
         }
         return false;
     }
@@ -103,7 +103,7 @@ public class Solver {
         do {
             result.add(next.getBoard());
             last = next;
-            next = last.getPerent();
+            next = last.getParent();
         } while ((next != null));
         if (last != start)
             return null;
@@ -113,15 +113,15 @@ public class Solver {
 
     private class QueueElement implements Comparable<QueueElement> {
         private final Board board;
-        private final QueueElement perent;
+        private final QueueElement parent;
         private final int step;
         private final int g;
         private final int h;
         private final int priority;
 
-        public QueueElement(Board board, QueueElement perent, int step) {
+        public QueueElement(Board board, QueueElement parent, int step) {
             this.board = board;
-            this.perent = perent;
+            this.parent = parent;
             this.step = step;
             this.g = board.hamming();
             this.h = board.manhattan();
@@ -141,8 +141,8 @@ public class Solver {
             return h;
         }
 
-        public QueueElement getPerent() {
-            return perent;
+        public QueueElement getParent() {
+            return parent;
         }
 
 
