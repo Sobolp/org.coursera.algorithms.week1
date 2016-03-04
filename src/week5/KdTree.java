@@ -55,7 +55,7 @@ public class KdTree {
                     last = next;
                     next = getNext(last, p);
                 }
-                next = new Node(p, last);
+                new Node(p, last);
             }
         }
         count++;
@@ -88,14 +88,14 @@ public class KdTree {
             StdDraw.setPenColor(StdDraw.BLACK);
             StdDraw.setPenRadius(.01);
             StdDraw.point(p.x(), p.y());
-            if (n.getLevel()%2 == 0){
+            if (n.getLevel() % 2 == 0) {
                 StdDraw.setPenColor(StdDraw.RED);
                 StdDraw.setPenRadius(.001);
-                StdDraw.line(p.x(),n.getRect().ymin(),p.x(),n.getRect().ymax());
-            }else{
+                StdDraw.line(p.x(), n.getRect().ymin(), p.x(), n.getRect().ymax());
+            } else {
                 StdDraw.setPenColor(StdDraw.BLUE);
                 StdDraw.setPenRadius(.001);
-                StdDraw.line(n.getRect().xmin(),p.y(),n.getRect().xmax(),p.y());
+                StdDraw.line(n.getRect().xmin(), p.y(), n.getRect().xmax(), p.y());
             }
 
         }
@@ -108,11 +108,24 @@ public class KdTree {
      * @return
      */
     public Iterable<Point2D> range(RectHV rect) {
-        Queue<Node> queue = new Queue<>();
+        Queue<Point2D> queue = new Queue<>();
         Node next = root;
+        checkIntersect(next, rect, queue);
+        return queue;
+    }
+
+    private void checkIntersect(Node next, RectHV rect, Queue<Point2D> q) {
+        if (next == null) return;
         if (rect.contains(next.getP()))
-            queue.enqueue(next);
-        return null;
+            q.enqueue(next.getP());
+
+        if (next.isIntersectLeft(rect))
+            //check left
+            checkIntersect(next.getLb(), rect, q);
+
+        if (next.isIntersectRight(rect))
+            //check right
+            checkIntersect(next.getRt(), rect, q);
     }
 
     /**
@@ -123,44 +136,44 @@ public class KdTree {
      */
     public Point2D nearest(Point2D p) {
         Node nearestNode = root;
-        nearestNode = checkLeft(root,p, nearestNode);
-        nearestNode = checkRight(root,p,nearestNode);
+        nearestNode = checkClosest(root, p, nearestNode);
         return nearestNode.getP();
     }
 
-    private Node checkLeft (Node x, Point2D p, Node nearestNode){
-        Node next = x.getLb();
+    private Node checkClosest(Node next, Point2D p, Node nearestNode) {
         if (next != null) {
-            if (p.distanceTo(next.getP()) < p.distanceTo(nearestNode.getP()))
+            if (next.getP().distanceTo(p) < nearestNode.getP().distanceTo(p))
                 nearestNode = next;
-            if (next.getRect().contains(p))
-                checkLeft(next, p, nearestNode);
+            if (next.isContainLeft(p)) {
+                // check left
+                nearestNode = checkClosest(next.getLb(), p, nearestNode);
+                if (next.getDistanceToParentsLine(p) <= nearestNode.getP().distanceTo(p))
+                    //check right
+                    nearestNode = checkClosest(next.getRt(), p, nearestNode);
+            }
+
+            if (next.isContainRight(p)) {
+                //check right
+                nearestNode = checkClosest(next.getRt(), p, nearestNode);
+                if (next.getDistanceToParentsLine(p) <= nearestNode.getP().distanceTo(p))
+                    //check left
+                    nearestNode = checkClosest(next.getLb(), p, nearestNode);
+            }
         }
         return nearestNode;
     }
 
-    private Node checkRight (Node x, Point2D p, Node nearestNode){
-        Node next = x.getRt();
-        if (next != null) {
-            if (p.distanceTo(next.getP()) < p.distanceTo(nearestNode.getP()))
-                nearestNode = next;
-            if (next.getRect().contains(p))
-                checkRight(next, p, nearestNode);
-        }
-        return nearestNode;
-    }
-
-    private Iterable<Node> getAllSubTree(Node node){
+    private Iterable<Node> getAllSubTree(Node node) {
         Queue<Node> q = new Queue<>();
-        inoder(node,q);
+        inoder(node, q);
         return q;
     }
 
-    private void inoder (Node x, Queue<Node> q){
+    private void inoder(Node x, Queue<Node> q) {
         if (x == null) return;
-        inoder(x.getLb(),q);
+        inoder(x.getLb(), q);
         q.enqueue(x);
-        inoder(x.getRt(),q);
+        inoder(x.getRt(), q);
     }
 
     private Node getNext(Node last, Point2D p) {
@@ -279,6 +292,63 @@ public class KdTree {
 
         public Node getParent() {
             return parent;
+        }
+
+        public double getDistanceToParentsLine(Point2D that) {
+            if (parent == null)
+                return Double.POSITIVE_INFINITY;
+            else {
+                RectHV parentLine;
+                if (this.level % 2 == 0)
+                    // then parents line horizontal
+                    parentLine = new RectHV(parent.getRect().xmin()
+                            , parent.getP().y()
+                            , parent.getRect().xmax()
+                            , parent.getP().y());
+                else
+                    //parents line vertical
+                    parentLine = new RectHV(parent.getP().x()
+                            , parent.getRect().ymin()
+                            , parent.getP().x()
+                            , parent.getRect().ymax());
+                return parentLine.distanceTo(that);
+            }
+        }
+
+        public boolean isIntersectLeft(RectHV that) {
+            return this.getLeftPart().intersects(that);
+        }
+
+        public boolean isIntersectRight(RectHV that) {
+            return this.getRightPart().intersects(that);
+        }
+
+        public boolean isContainLeft(Point2D that) {
+            return this.getLeftPart().contains(that);
+        }
+
+        public boolean isContainRight(Point2D that) {
+            return this.getRightPart().contains(that);
+        }
+
+        private RectHV getLeftPart() {
+            RectHV result;
+            if (this.level % 2 == 0) {
+                result = new RectHV(rect.xmin(), rect.ymin(), p.x(), rect.ymax());
+            } else {
+                result = new RectHV(rect.xmin(), rect.ymin(), rect.xmax(), p.y());
+            }
+            return result;
+        }
+
+        private RectHV getRightPart() {
+            RectHV result;
+            if (this.level % 2 == 0) {
+                result = new RectHV(p.x(), rect.ymin(), rect.xmax(), rect.ymax());
+            } else {
+                result = new RectHV(rect.xmin(), p.y(), rect.xmax(), rect.ymax());
+            }
+            return result;
         }
     }
 

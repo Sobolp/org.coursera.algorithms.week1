@@ -91,7 +91,8 @@ public class PointSET {
      * @return
      */
     public Point2D nearest(Point2D p) {
-        Point2D nearestPoint = new Point2D(2.0, 2.0);
+        if (this.size() == 0) return null;
+        Point2D nearestPoint = new Point2D(20.0, 20.0);
         for (Point2D thisP : point2DTreeSet) {
             if (p.distanceTo(thisP) < p.distanceTo(nearestPoint)) {
                 nearestPoint = thisP;

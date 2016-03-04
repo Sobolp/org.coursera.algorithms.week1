@@ -63,18 +63,18 @@ public class KdTreeTest {
     @Test
     public void testRange() throws Exception {
         assertEquals("circle4.txt containt all 4 points in rect((0.0,0.0),(1.0,1.0))"
-                , "(0.5, 1.0) (1.0, 0.5) (0.0, 0.5) (0.5, 0.0) ", circle4.range(new RectHV(0.0, 0.0, 1.0, 1.0)).toString());
+                , "(0.0, 0.5) (0.5, 1.0) (0.5, 0.0) (1.0, 0.5) ", circle4.range(new RectHV(0.0, 0.0, 1.0, 1.0)).toString());
         assertEquals("circle10.txt containt 3 points in rect((0.0,0.0),(0.4,0.4))"
-                , "(0.02447200007736683, 0.34549200534820557) (0.2061070054769516, 0.09549199789762497) "
+                , "(0.2061070054769516, 0.09549199789762497) (0.02447200007736683, 0.34549200534820557) "
                 , circle10.range(new RectHV(0.0, 0.0, 0.4, 0.4)).toString());
     }
 
     @Test
     public void testNearest() throws Exception {
-//        assertEquals("circle4.txt nearest point to Point(0.1,0.6) is Point(0.0,0.5)",
-//                "(0.0, 0.5)", circle4.nearest(new Point2D(0.1, 0.6)).toString());
-        assertEquals("circle10.txt nearest point to Point(0.98 0.66) is Point(0.975528 0.654508)",
-                "(0.9755280017852783, 0.6545079946517944)", circle10.nearest(new Point2D(0.98, 0.66)).toString());
+        assertEquals("circle4.txt nearest point to Point(0.1,0.6) is Point(0.0,0.5)",
+                "(0.0, 0.5)", circle4.nearest(new Point2D(0.1, 0.6)).toString());
+        assertEquals("circle10.txt nearest point to Point(0.81, 0.3) is Point(0.975528 0.654508)",
+                "(0.9755280017852783, 0.34549200534820557)", circle10.nearest(new Point2D(0.81, 0.3)).toString());
 
     }
 }
