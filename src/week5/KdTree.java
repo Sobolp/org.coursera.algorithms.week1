@@ -136,6 +136,7 @@ public class KdTree {
      * @return
      */
     public Point2D nearest(Point2D p) {
+        if (this.size() == 0) return null;
         Node nearestNode = root;
         nearestNode = checkClosest(root, p, nearestNode);
         return nearestNode.getP();
@@ -145,20 +146,17 @@ public class KdTree {
         if (next != null) {
             if (next.getP().distanceTo(p) < nearestNode.getP().distanceTo(p))
                 nearestNode = next;
-            if (next.isContainLeft(p)) {
+            Node last = next;
+            next = last.getLb();
+            //if distance to next rect is shorter then nearest
+            if (next != null && next.getRect().distanceTo(p) < nearestNode.getP().distanceTo(p)) {
                 // check left
-                nearestNode = checkClosest(next.getLb(), p, nearestNode);
-                if (next.getDistanceToParentsLine(p) <= nearestNode.getP().distanceTo(p))
-                    //check right
-                    nearestNode = checkClosest(next.getRt(), p, nearestNode);
+                nearestNode = checkClosest(next, p, nearestNode);
             }
-
-            if (next.isContainRight(p)) {
+            next = last.getRt();
+            if (next != null && next.getRect().distanceTo(p) < nearestNode.getP().distanceTo(p)) {
                 //check right
-                nearestNode = checkClosest(next.getRt(), p, nearestNode);
-                if (next.getDistanceToParentsLine(p) <= nearestNode.getP().distanceTo(p))
-                    //check left
-                    nearestNode = checkClosest(next.getLb(), p, nearestNode);
+                nearestNode = checkClosest(next, p, nearestNode);
             }
         }
         return nearestNode;
@@ -293,27 +291,6 @@ public class KdTree {
 
         public Node getParent() {
             return parent;
-        }
-
-        public double getDistanceToParentsLine(Point2D that) {
-            if (parent == null)
-                return Double.POSITIVE_INFINITY;
-            else {
-                RectHV parentLine;
-                if (this.level % 2 == 0)
-                    // then parents line horizontal
-                    parentLine = new RectHV(parent.getRect().xmin()
-                            , parent.getP().y()
-                            , parent.getRect().xmax()
-                            , parent.getP().y());
-                else
-                    //parents line vertical
-                    parentLine = new RectHV(parent.getP().x()
-                            , parent.getRect().ymin()
-                            , parent.getP().x()
-                            , parent.getRect().ymax());
-                return parentLine.distanceTo(that);
-            }
         }
 
         public boolean isIntersectLeft(RectHV that) {
