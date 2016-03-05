@@ -9,8 +9,6 @@
     <list default="true" id="b26af222-c2d0-446a-bda7-98ddd8a80f1f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/week5/KdTree.java" afterPath="$PROJECT_DIR$/src/week5/KdTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/week5/PointSET.java" afterPath="$PROJECT_DIR$/src/week5/PointSET.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/week5/KdTreeTest.java" afterPath="$PROJECT_DIR$/tests/week5/KdTreeTest.java" />
     </list>
     <ignored path="org.coursera.algorithms.week1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PointSET.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PointSET.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/week5/PointSET.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+              <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#385#386#0" expanded="true" />
@@ -53,21 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PointSETTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/week5/PointSETTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KdTree.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="KdTree.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/week5/KdTree.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+              <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#355#356#0" expanded="true" />
@@ -76,32 +64,32 @@
                 <element signature="e#508#509#0" expanded="true" />
                 <element signature="e#606#607#0" expanded="true" />
                 <element signature="e#634#635#0" expanded="true" />
-                <element signature="e#7821#7822#0" expanded="true" />
-                <element signature="e#7854#7855#0" expanded="true" />
-                <element signature="e#7892#7893#0" expanded="true" />
-                <element signature="e#7928#7929#0" expanded="true" />
-                <element signature="e#7959#7960#0" expanded="true" />
-                <element signature="e#7992#7993#0" expanded="true" />
-                <element signature="e#8030#8031#0" expanded="true" />
-                <element signature="e#8066#8067#0" expanded="true" />
-                <element signature="e#8101#8102#0" expanded="true" />
-                <element signature="e#8136#8137#0" expanded="true" />
-                <element signature="e#8180#8181#0" expanded="true" />
-                <element signature="e#8220#8221#0" expanded="true" />
-                <element signature="e#8253#8254#0" expanded="true" />
-                <element signature="e#8289#8290#0" expanded="true" />
-                <element signature="e#8322#8323#0" expanded="true" />
-                <element signature="e#8354#8355#0" expanded="true" />
-                <element signature="e#8389#8390#0" expanded="true" />
-                <element signature="e#8426#8427#0" expanded="true" />
-                <element signature="e#9354#9355#0" expanded="true" />
-                <element signature="e#9420#9421#0" expanded="true" />
-                <element signature="e#9476#9477#0" expanded="true" />
-                <element signature="e#9543#9544#0" expanded="true" />
-                <element signature="e#9597#9598#0" expanded="true" />
-                <element signature="e#9661#9662#0" expanded="true" />
-                <element signature="e#9716#9717#0" expanded="true" />
-                <element signature="e#9781#9782#0" expanded="true" />
+                <element signature="e#7850#7851#0" expanded="true" />
+                <element signature="e#7883#7884#0" expanded="true" />
+                <element signature="e#7921#7922#0" expanded="true" />
+                <element signature="e#7957#7958#0" expanded="true" />
+                <element signature="e#7988#7989#0" expanded="true" />
+                <element signature="e#8021#8022#0" expanded="true" />
+                <element signature="e#8059#8060#0" expanded="true" />
+                <element signature="e#8095#8096#0" expanded="true" />
+                <element signature="e#8130#8131#0" expanded="true" />
+                <element signature="e#8165#8166#0" expanded="true" />
+                <element signature="e#8209#8210#0" expanded="true" />
+                <element signature="e#8249#8250#0" expanded="true" />
+                <element signature="e#8282#8283#0" expanded="true" />
+                <element signature="e#8318#8319#0" expanded="true" />
+                <element signature="e#8351#8352#0" expanded="true" />
+                <element signature="e#8383#8384#0" expanded="true" />
+                <element signature="e#8418#8419#0" expanded="true" />
+                <element signature="e#8455#8456#0" expanded="true" />
+                <element signature="e#9383#9384#0" expanded="true" />
+                <element signature="e#9449#9450#0" expanded="true" />
+                <element signature="e#9505#9506#0" expanded="true" />
+                <element signature="e#9572#9573#0" expanded="true" />
+                <element signature="e#9626#9627#0" expanded="true" />
+                <element signature="e#9690#9691#0" expanded="true" />
+                <element signature="e#9745#9746#0" expanded="true" />
+                <element signature="e#9810#9811#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -267,8 +255,8 @@
         <option value="$PROJECT_DIR$/src/loaders/Loaders.java" />
         <option value="$PROJECT_DIR$/src/week5/RangeSearchVisualizer.java" />
         <option value="$PROJECT_DIR$/tests/week5/KdTreeTest.java" />
-        <option value="$PROJECT_DIR$/src/week5/KdTree.java" />
         <option value="$PROJECT_DIR$/src/week5/PointSET.java" />
+        <option value="$PROJECT_DIR$/src/week5/KdTree.java" />
       </list>
     </option>
   </component>
@@ -1164,7 +1152,7 @@
       <workItem from="1456239404074" duration="57295000" />
       <workItem from="1456754324090" duration="35000" />
       <workItem from="1456830303199" duration="12000" />
-      <workItem from="1457081220237" duration="41611000" />
+      <workItem from="1457081220237" duration="44738000" />
     </task>
     <task id="LOCAL-00001" summary="week1_1">
       <created>1453845061157</created>
@@ -1418,16 +1406,16 @@
       <option name="project" value="LOCAL" />
       <updated>1457120901246</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="week5&#10;v0.1.0&#10;PointSET is almost OK&#10;Compilation:  PASSED&#10;Style:        PASSED&#10;Findbugs:     No potential bugs found.&#10;API:          PASSED&#10;&#10;Correctness:  16/21 tests passed&#10;Memory:       8/8 tests passed&#10;Timing:       42/42 tests passed&#10;&#10;Aggregate score: 84.52% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]">
+      <created>1457135868716</created>
+      <option name="number" value="00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1457135868716</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="KdTreeTest - 2016.03.05 at 01h 07m 43s.xml">
-      <configuration name="KdTreeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="KdTreeTest - 2016.03.05 at 01h 10m 49s.xml">
-      <configuration name="KdTreeTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="KdTreeTest - 2016.03.05 at 01h 16m 38s.xml">
       <configuration name="KdTreeTest" configurationId="JUnit" />
     </history-entry>
@@ -1452,9 +1440,15 @@
     <history-entry file="PointSETTest - 2016.03.05 at 01h 49m 28s.xml">
       <configuration name="PointSETTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PointSETTest - 2016.03.05 at 10h 38m 50s.xml">
+      <configuration name="PointSETTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PointSETTest - 2016.03.05 at 10h 44m 10s.xml">
+      <configuration name="PointSETTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="479052000" />
+    <option name="totallyTimeSpent" value="482179000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1508,7 +1502,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="week2 v 1.0 &#10;Compilation:  PASSED&#10;Style:        FAILED&#10;Findbugs:     No potential bugs found.&#10;API:          PASSED&#10;&#10;Correctness:  37/37 tests passed&#10;Memory:       53/53 tests passed&#10;Timing:       62/62 tests passed&#10;&#10;Aggregate score: 100.00% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]" />
     <MESSAGE value="week2 v 1.1 &#10;Failed test3 only&#10;Test 3: check that subsets are uniformly random" />
     <MESSAGE value="week2 v 1.2 &#10;Subset with own array" />
     <MESSAGE value="week2 v 2.0 FINAL &#10;Compilation:  PASSED&#10;Style:        PASSED&#10;Findbugs:     No potential bugs found.&#10;API:          PASSED&#10;&#10;Correctness:  37/37 tests passed&#10;Memory:       54/53 tests passed&#10;Timing:       62/62 tests passed&#10;&#10;Aggregate score: 100.19% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]" />
@@ -1533,7 +1526,8 @@
     <MESSAGE value="week4&#10;v1.0.0&#10;Compilation:  PASSED&#10;Style:        PASSED&#10;Findbugs:     No potential bugs found.&#10;API:          PASSED&#10;&#10;Correctness:  42/42 tests passed&#10;Memory:       8/8 tests passed&#10;Timing:       17/17 tests passed&#10;&#10;Aggregate score: 100.00% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]" />
     <MESSAGE value="week5&#10;v0.0.1&#10;only PointSET" />
     <MESSAGE value="week5&#10;v0.0.2&#10;only for save KdTree with methods checkRight, checkLeft" />
-    <option name="LAST_COMMIT_MESSAGE" value="week5&#10;v0.0.2&#10;only for save KdTree with methods checkRight, checkLeft" />
+    <MESSAGE value="week5&#10;v0.1.0&#10;PointSET is almost OK&#10;Compilation:  PASSED&#10;Style:        PASSED&#10;Findbugs:     No potential bugs found.&#10;API:          PASSED&#10;&#10;Correctness:  16/21 tests passed&#10;Memory:       8/8 tests passed&#10;Timing:       42/42 tests passed&#10;&#10;Aggregate score: 84.52% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]" />
+    <option name="LAST_COMMIT_MESSAGE" value="week5&#10;v0.1.0&#10;PointSET is almost OK&#10;Compilation:  PASSED&#10;Style:        PASSED&#10;Findbugs:     No potential bugs found.&#10;API:          PASSED&#10;&#10;Correctness:  16/21 tests passed&#10;Memory:       8/8 tests passed&#10;Timing:       42/42 tests passed&#10;&#10;Aggregate score: 84.52% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1714,7 +1708,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/week5/KdTree.java</url>
-          <line>143</line>
+          <line>144</line>
           <properties />
           <option name="timeStamp" value="174" />
         </line-breakpoint>
@@ -2119,58 +2113,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/week5/PointSETTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.8085502">
           <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week5/KdTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-            <element signature="e#606#607#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#7821#7822#0" expanded="true" />
-            <element signature="e#7854#7855#0" expanded="true" />
-            <element signature="e#7892#7893#0" expanded="true" />
-            <element signature="e#7928#7929#0" expanded="true" />
-            <element signature="e#7959#7960#0" expanded="true" />
-            <element signature="e#7992#7993#0" expanded="true" />
-            <element signature="e#8030#8031#0" expanded="true" />
-            <element signature="e#8066#8067#0" expanded="true" />
-            <element signature="e#8101#8102#0" expanded="true" />
-            <element signature="e#8136#8137#0" expanded="true" />
-            <element signature="e#8180#8181#0" expanded="true" />
-            <element signature="e#8220#8221#0" expanded="true" />
-            <element signature="e#8253#8254#0" expanded="true" />
-            <element signature="e#8289#8290#0" expanded="true" />
-            <element signature="e#8322#8323#0" expanded="true" />
-            <element signature="e#8354#8355#0" expanded="true" />
-            <element signature="e#8389#8390#0" expanded="true" />
-            <element signature="e#8426#8427#0" expanded="true" />
-            <element signature="e#9354#9355#0" expanded="true" />
-            <element signature="e#9420#9421#0" expanded="true" />
-            <element signature="e#9476#9477#0" expanded="true" />
-            <element signature="e#9543#9544#0" expanded="true" />
-            <element signature="e#9597#9598#0" expanded="true" />
-            <element signature="e#9661#9662#0" expanded="true" />
-            <element signature="e#9716#9717#0" expanded="true" />
-            <element signature="e#9781#9782#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/week5/PointSET.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#385#386#0" expanded="true" />
@@ -2181,6 +2133,48 @@
             <element signature="e#717#718#0" expanded="true" />
             <element signature="e#1104#1105#0" expanded="true" />
             <element signature="e#1153#1154#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week5/KdTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+            <element signature="e#380#381#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
+            <element signature="e#606#607#0" expanded="true" />
+            <element signature="e#634#635#0" expanded="true" />
+            <element signature="e#7850#7851#0" expanded="true" />
+            <element signature="e#7883#7884#0" expanded="true" />
+            <element signature="e#7921#7922#0" expanded="true" />
+            <element signature="e#7957#7958#0" expanded="true" />
+            <element signature="e#7988#7989#0" expanded="true" />
+            <element signature="e#8021#8022#0" expanded="true" />
+            <element signature="e#8059#8060#0" expanded="true" />
+            <element signature="e#8095#8096#0" expanded="true" />
+            <element signature="e#8130#8131#0" expanded="true" />
+            <element signature="e#8165#8166#0" expanded="true" />
+            <element signature="e#8209#8210#0" expanded="true" />
+            <element signature="e#8249#8250#0" expanded="true" />
+            <element signature="e#8282#8283#0" expanded="true" />
+            <element signature="e#8318#8319#0" expanded="true" />
+            <element signature="e#8351#8352#0" expanded="true" />
+            <element signature="e#8383#8384#0" expanded="true" />
+            <element signature="e#8418#8419#0" expanded="true" />
+            <element signature="e#8455#8456#0" expanded="true" />
+            <element signature="e#9383#9384#0" expanded="true" />
+            <element signature="e#9449#9450#0" expanded="true" />
+            <element signature="e#9505#9506#0" expanded="true" />
+            <element signature="e#9572#9573#0" expanded="true" />
+            <element signature="e#9626#9627#0" expanded="true" />
+            <element signature="e#9690#9691#0" expanded="true" />
+            <element signature="e#9745#9746#0" expanded="true" />
+            <element signature="e#9810#9811#0" expanded="true" />
           </folding>
         </state>
       </provider>

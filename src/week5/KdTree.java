@@ -47,6 +47,7 @@ public class KdTree {
         if (root == null) {
             root = new Node(p);
             root.setRect(new RectHV(0.0, 0.0, 1.0, 1.0));
+            count++;
         } else {
             if (!this.contains(p)) {
                 Node next = root;
@@ -56,9 +57,9 @@ public class KdTree {
                     next = getNext(last, p);
                 }
                 new Node(p, last);
+                count++;
             }
         }
-        count++;
     }
 
     /**
