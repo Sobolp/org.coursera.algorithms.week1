@@ -144,19 +144,35 @@ public class KdTree {
 
     private Node checkClosest(Node next, Point2D p, Node nearestNode) {
         if (next != null) {
-            if (next.getP().distanceTo(p) < nearestNode.getP().distanceTo(p))
+            if (next.getP().distanceSquaredTo(p) < nearestNode.getP().distanceSquaredTo(p))
                 nearestNode = next;
             Node last = next;
-            next = last.getLb();
-            //if distance to next rect is shorter then nearest
-            if (next != null && next.getRect().distanceTo(p) < nearestNode.getP().distanceTo(p)) {
-                // check left
-                nearestNode = checkClosest(next, p, nearestNode);
-            }
-            next = last.getRt();
-            if (next != null && next.getRect().distanceTo(p) < nearestNode.getP().distanceTo(p)) {
-                //check right
-                nearestNode = checkClosest(next, p, nearestNode);
+
+            //there must insert prioritise left or right check first
+            if (next.getP().compareTo(p) > 0) {
+                next = last.getLb();
+                //if distance to next rect is shorter then nearest
+                if (next != null && next.getRect().distanceSquaredTo(p) < nearestNode.getP().distanceSquaredTo(p)) {
+                    // check left
+                    nearestNode = checkClosest(next, p, nearestNode);
+                }
+                next = last.getRt();
+                if (next != null && next.getRect().distanceSquaredTo(p) < nearestNode.getP().distanceSquaredTo(p)) {
+                    //check right
+                    nearestNode = checkClosest(next, p, nearestNode);
+                }
+            } else {
+                next = last.getRt();
+                if (next != null && next.getRect().distanceSquaredTo(p) < nearestNode.getP().distanceSquaredTo(p)) {
+                    //check right
+                    nearestNode = checkClosest(next, p, nearestNode);
+                }
+                next = last.getLb();
+                //if distance to next rect is shorter then nearest
+                if (next != null && next.getRect().distanceSquaredTo(p) < nearestNode.getP().distanceSquaredTo(p)) {
+                    // check left
+                    nearestNode = checkClosest(next, p, nearestNode);
+                }
             }
         }
         return nearestNode;
